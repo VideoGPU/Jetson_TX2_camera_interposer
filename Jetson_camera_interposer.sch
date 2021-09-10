@@ -1,0 +1,1470 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Jetson_TX2_camera_interposer"
+Date "2021-09-10"
+Rev "1"
+Comp "Michael L."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TX2_Symbols:QTH-060-01-L-D-A J2
+U 1 1 595ACB35
+P 4800 5050
+F 0 "J2" H 4450 1350 45  0000 L BNN
+F 1 "QTH-060-01-L-D-A" H 4450 8200 45  0000 L BNN
+F 2 "hdmi3dmix:QTH-060-01-X-D-A-QTH-060-01-X-D-A" H 4480 8200 20  0001 C CNN
+F 3 "" H 4450 8050 60  0001 C CNN
+	1    4800 5050
+	1    0    0    -1  
+$EndComp
+Text Notes 8900 10700 0    118  ~ 24
+Stackup:\nSingle Ended: 6 mil\nDifferential:\n4  mil Width, 8 mil spacing\n-----\n0.1 mm height to ground plane\n
+Text Label 3850 5850 2    60   ~ 0
+I2C_CAM_CLK
+Text Label 3850 5950 2    60   ~ 0
+I2C_CAM_DAT
+Text Label 3200 7350 2    60   ~ 0
+I2C_GP0_CLK_1V8
+Text Label 3250 7450 2    60   ~ 0
+I2C_GP0_DAT_1V8
+Text Label 3400 6650 2    60   ~ 0
+CAM0_MCLK
+Text Label 3400 6750 2    60   ~ 0
+CAM0_PWR
+Text Label 3250 6850 2    60   ~ 0
+CAM0_RST
+Text Label 3250 6950 2    60   ~ 0
+CAM_FLASH_EN
+Text Label 6600 6350 2    60   ~ 0
+CAM_VSYNC
+$Comp
+L power:Earth #PWR01
+U 1 1 596A06FB
+P 4150 8600
+F 0 "#PWR01" H 4150 8350 50  0001 C CNN
+F 1 "Earth" H 4150 8450 50  0001 C CNN
+F 2 "" H 4150 8600 50  0000 C CNN
+F 3 "" H 4150 8600 50  0000 C CNN
+	1    4150 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR02
+U 1 1 596A0868
+P 6000 8200
+F 0 "#PWR02" H 6000 7950 50  0001 C CNN
+F 1 "Earth" H 6000 8050 50  0001 C CNN
+F 2 "" H 6000 8200 50  0000 C CNN
+F 3 "" H 6000 8200 50  0000 C CNN
+	1    6000 8200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4250 7250
+NoConn ~ 4250 6450
+NoConn ~ 4250 6550
+NoConn ~ 4250 4950
+NoConn ~ 4250 5150
+NoConn ~ 4250 5250
+NoConn ~ 4250 5350
+NoConn ~ 4250 5450
+NoConn ~ 4250 5550
+NoConn ~ 4250 5650
+NoConn ~ 4250 5750
+NoConn ~ 4250 4450
+NoConn ~ 4250 4550
+NoConn ~ 4250 4150
+NoConn ~ 4250 4250
+NoConn ~ 4250 3950
+NoConn ~ 4250 3850
+NoConn ~ 5900 7250
+NoConn ~ 5900 7350
+NoConn ~ 5900 7650
+NoConn ~ 5900 7750
+NoConn ~ 5900 6450
+NoConn ~ 5900 6550
+NoConn ~ 5900 6650
+NoConn ~ 5900 5650
+NoConn ~ 5900 5750
+NoConn ~ 5900 5850
+NoConn ~ 5900 5950
+NoConn ~ 5900 5150
+NoConn ~ 5900 5250
+NoConn ~ 5900 5350
+NoConn ~ 5900 5450
+NoConn ~ 5900 4950
+NoConn ~ 5900 4450
+NoConn ~ 5900 4550
+NoConn ~ 5900 4150
+NoConn ~ 5900 4250
+NoConn ~ 5900 3850
+NoConn ~ 5900 3950
+Text Label 6100 7150 0    60   ~ 0
+JETSON_1V8
+Text Notes 7150 10650 0    79   ~ 0
+Stackup:\n---High speed signal\n---Ground\n---Slow signals\n---Power\n---Ground\n---High speed signals
+$Comp
+L TX2_Symbols:QSH-060-01-L-D-A J1
+U 1 1 5A5122D0
+P 10400 5050
+F 0 "J1" H 10050 1850 45  0000 L BNN
+F 1 "QSH-060-01-L-D-A" H 10050 8200 45  0000 L BNN
+F 2 "hdmi3dmix:samtec-qsh-QSH-060-01-X-D-A" H 10080 8200 20  0001 C CNN
+F 3 "" H 10050 8050 60  0001 C CNN
+	1    10400 5050
+	1    0    0    -1  
+$EndComp
+Text Label 3200 7150 0    60   ~ 0
+JETSON_1V2
+Text Label 6900 2050 2    60   ~ 0
+CSI1_D0_P
+Text Label 6800 2150 2    60   ~ 0
+CSI1_D0_N
+Text Label 6800 2650 2    60   ~ 0
+CSI1_D1_P
+Text Label 6800 2750 2    60   ~ 0
+CSI1_D1_N
+Text Label 3000 2050 0    60   ~ 0
+CSI0_D0_P
+Text Label 3000 2150 0    60   ~ 0
+CSI0_D0_N
+Text Label 3000 2350 0    60   ~ 0
+CSI0_CLK_P
+Text Label 3000 2450 0    60   ~ 0
+CSI0_CLK_N
+Text Label 3000 2650 0    60   ~ 0
+CSI0_D1_P
+Text Label 3000 2750 0    60   ~ 0
+CSI0_D1_N
+Text Notes 4650 1400 0    60   ~ 0
+Bottom connector
+Text Notes 10350 1650 0    60   ~ 0
+Top connector
+$Comp
+L TX2_Symbols:R R1
+U 1 1 5A5F30D9
+P 2350 2150
+F 0 "R1" V 2430 2150 50  0000 C CNN
+F 1 "0" V 2350 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2280 2150 50  0001 C CNN
+F 3 "" H 2350 2150 50  0001 C CNN
+	1    2350 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:R R4
+U 1 1 5A5F30FD
+P 2850 2350
+F 0 "R4" V 2930 2350 50  0000 C CNN
+F 1 "0" V 2850 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2780 2350 50  0001 C CNN
+F 3 "" H 2850 2350 50  0001 C CNN
+	1    2850 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:R R6
+U 1 1 5A5F314B
+P 2850 2650
+F 0 "R6" V 2930 2650 50  0000 C CNN
+F 1 "0" V 2850 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2780 2650 50  0001 C CNN
+F 3 "" H 2850 2650 50  0001 C CNN
+	1    2850 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:R R3
+U 1 1 5A5F3293
+P 2350 2450
+F 0 "R3" V 2430 2450 50  0000 C CNN
+F 1 "0" V 2350 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2280 2450 50  0001 C CNN
+F 3 "" H 2350 2450 50  0001 C CNN
+	1    2350 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:R R5
+U 1 1 5A5F32C9
+P 2350 2750
+F 0 "R5" V 2430 2750 50  0000 C CNN
+F 1 "0" V 2350 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2280 2750 50  0001 C CNN
+F 3 "" H 2350 2750 50  0001 C CNN
+	1    2350 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:R R7
+U 1 1 5A5F4B18
+P 7500 2150
+F 0 "R7" V 7580 2150 50  0000 C CNN
+F 1 "0" V 7500 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7430 2150 50  0001 C CNN
+F 3 "" H 7500 2150 50  0001 C CNN
+	1    7500 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:R R8
+U 1 1 5A5F4C51
+P 7050 2050
+F 0 "R8" V 7130 2050 50  0000 C CNN
+F 1 "0" V 7050 2050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6980 2050 50  0001 C CNN
+F 3 "" H 7050 2050 50  0001 C CNN
+	1    7050 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:R R10
+U 1 1 5A5F4DAE
+P 7500 2650
+F 0 "R10" V 7580 2650 50  0000 C CNN
+F 1 "0" V 7500 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7430 2650 50  0001 C CNN
+F 3 "" H 7500 2650 50  0001 C CNN
+	1    7500 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:R R9
+U 1 1 5A5F4E04
+P 7050 2750
+F 0 "R9" V 7130 2750 50  0000 C CNN
+F 1 "0" V 7050 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6980 2750 50  0001 C CNN
+F 3 "" H 7050 2750 50  0001 C CNN
+	1    7050 2750
+	0    1    1    0   
+$EndComp
+Text Label 7850 2050 0    60   ~ 0
+MUXED_1_D2_P
+Text Label 7850 2150 0    60   ~ 0
+MUXED_1_D2_N
+Text Label 7850 2650 0    60   ~ 0
+MUXED_1_D3_P
+Text Label 7850 2750 0    60   ~ 0
+MUXED_1_D3_N
+Text Label 1500 2050 0    60   ~ 0
+MUXED_1_D0_P
+Text Label 1500 2150 0    60   ~ 0
+MUXED_1_D0_N
+Text Label 1500 2350 0    60   ~ 0
+MUXED_1_CLK_P
+Text Label 1500 2450 0    60   ~ 0
+MUXED_1_CLK_N
+Text Label 1500 2650 0    60   ~ 0
+MUXED_1_D1_P
+Text Label 1500 2750 0    60   ~ 0
+MUXED_1_D1_N
+NoConn ~ 5900 3250
+NoConn ~ 5900 3350
+NoConn ~ 5900 3550
+NoConn ~ 5900 3650
+Text Label 12150 2050 0    60   ~ 0
+MUXED_1_D2_P
+Text Label 12150 2150 0    60   ~ 0
+MUXED_1_D2_N
+Text Label 12100 2650 0    60   ~ 0
+MUXED_1_D3_P
+Text Label 12100 2750 0    60   ~ 0
+MUXED_1_D3_N
+Text Label 8800 2050 0    60   ~ 0
+MUXED_1_D0_P
+Text Label 8800 2150 0    60   ~ 0
+MUXED_1_D0_N
+Text Label 8800 2350 0    60   ~ 0
+MUXED_1_CLK_P
+Text Label 8800 2450 0    60   ~ 0
+MUXED_1_CLK_N
+Text Label 8800 2650 0    60   ~ 0
+MUXED_1_D1_P
+Text Label 8800 2750 0    60   ~ 0
+MUXED_1_D1_N
+$Comp
+L TX2_Symbols:Conn_01x01 J3
+U 1 1 5A60149C
+P 14700 3950
+F 0 "J3" H 14700 4050 50  0000 C CNN
+F 1 "Conn_01x01" H 14700 3850 50  0001 C CNN
+F 2 "hdmi3dmix:ground_probe" H 14700 3950 50  0001 C CNN
+F 3 "" H 14700 3950 50  0001 C CNN
+	1    14700 3950
+	1    0    0    -1  
+$EndComp
+Text Notes 14500 3750 0    60   ~ 0
+Ground pads
+$Comp
+L TX2_Symbols:Conn_01x01 J4
+U 1 1 5A6017BC
+P 14700 4250
+F 0 "J4" H 14700 4350 50  0000 C CNN
+F 1 "Conn_01x01" H 14700 4150 50  0001 C CNN
+F 2 "hdmi3dmix:ground_probe" H 14700 4250 50  0001 C CNN
+F 3 "" H 14700 4250 50  0001 C CNN
+	1    14700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TX2_Symbols:Conn_01x01 J5
+U 1 1 5A60182E
+P 14700 4550
+F 0 "J5" H 14700 4650 50  0000 C CNN
+F 1 "Conn_01x01" H 14700 4450 50  0001 C CNN
+F 2 "hdmi3dmix:ground_probe" H 14700 4550 50  0001 C CNN
+F 3 "" H 14700 4550 50  0001 C CNN
+	1    14700 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L TX2_Symbols:Conn_01x01 J6
+U 1 1 5A60188B
+P 14700 4850
+F 0 "J6" H 14700 4950 50  0000 C CNN
+F 1 "Conn_01x01" H 14700 4750 50  0001 C CNN
+F 2 "hdmi3dmix:ground_probe" H 14700 4850 50  0001 C CNN
+F 3 "" H 14700 4850 50  0001 C CNN
+	1    14700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR05
+U 1 1 5A601ACB
+P 14300 8300
+F 0 "#PWR05" H 14300 8050 50  0001 C CNN
+F 1 "Earth" H 14300 8150 50  0001 C CNN
+F 2 "" H 14300 8300 50  0000 C CNN
+F 3 "" H 14300 8300 50  0000 C CNN
+	1    14300 8300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5900 2950
+NoConn ~ 5900 3050
+NoConn ~ 4250 2950
+NoConn ~ 4250 3050
+NoConn ~ 4250 3250
+NoConn ~ 4250 3350
+NoConn ~ 4250 3550
+NoConn ~ 4250 3650
+NoConn ~ 5900 2350
+NoConn ~ 5900 2450
+NoConn ~ 11500 2350
+NoConn ~ 11500 2450
+Text Notes 3200 10600 0    98   ~ 20
+Diff pairs length:\nMuxed1_clk = 79.193 + 47.282 = 126.475\nMuxed1_D0  = 45.339 + 74.459 = 126.475\nMuxed1_D1  = 83.195  + 43.28  = 126.475\nMuxed1_D2  = 30  + 96.475  =  126.475\nMuxed1_D3  = 26.7 + 79.356 = 126.475
+$Comp
+L TX2_Symbols:Conn_01x01 J21
+U 1 1 5B81DBAD
+P 14700 5150
+F 0 "J21" H 14700 5250 50  0000 C CNN
+F 1 "Conn_01x01" H 14700 5050 50  0001 C CNN
+F 2 "hdmi3dmix:ground_probe" H 14700 5150 50  0001 C CNN
+F 3 "" H 14700 5150 50  0001 C CNN
+	1    14700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TX2_Symbols:Conn_01x01 J23
+U 1 1 5B81DC55
+P 14700 5850
+F 0 "J23" H 14700 5950 50  0000 C CNN
+F 1 "Conn_01x01" H 14700 5750 50  0000 C CNN
+F 2 "hdmi3dmix:ground_probe" H 14700 5850 50  0001 C CNN
+F 3 "" H 14700 5850 50  0001 C CNN
+	1    14700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TX2_Symbols:Conn_01x01 J22
+U 1 1 5B81DCCB
+P 14700 5500
+F 0 "J22" H 14700 5600 50  0000 C CNN
+F 1 "Conn_01x01" H 14700 5400 50  0001 C CNN
+F 2 "hdmi3dmix:ground_probe" H 14700 5500 50  0001 C CNN
+F 3 "" H 14700 5500 50  0001 C CNN
+	1    14700 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TX2_Symbols:Conn_01x01 J24
+U 1 1 5B81DDD9
+P 14700 6150
+F 0 "J24" H 14700 6250 50  0000 C CNN
+F 1 "Conn_01x01" H 14700 6050 50  0000 C CNN
+F 2 "hdmi3dmix:ground_probe" H 14700 6150 50  0001 C CNN
+F 3 "" H 14700 6150 50  0001 C CNN
+	1    14700 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TX2_Symbols:Conn_01x01 J25
+U 1 1 5B81DE5D
+P 14700 6450
+F 0 "J25" H 14700 6550 50  0000 C CNN
+F 1 "Conn_01x01" H 14700 6350 50  0000 C CNN
+F 2 "hdmi3dmix:ground_probe" H 14700 6450 50  0001 C CNN
+F 3 "" H 14700 6450 50  0001 C CNN
+	1    14700 6450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 11500 6450
+NoConn ~ 11500 6550
+NoConn ~ 11500 6650
+NoConn ~ 5900 6750
+NoConn ~ 5900 6850
+NoConn ~ 5900 6950
+NoConn ~ 11500 6750
+NoConn ~ 11500 6850
+NoConn ~ 11500 6950
+NoConn ~ 11500 7250
+NoConn ~ 11500 7350
+NoConn ~ 11500 7650
+NoConn ~ 11500 7750
+$Comp
+L power:Earth #PWR03
+U 1 1 5B824AC3
+P 9600 8450
+F 0 "#PWR03" H 9600 8200 50  0001 C CNN
+F 1 "Earth" H 9600 8300 50  0001 C CNN
+F 2 "" H 9600 8450 50  0000 C CNN
+F 3 "" H 9600 8450 50  0000 C CNN
+	1    9600 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR04
+U 1 1 5B824C18
+P 11650 8450
+F 0 "#PWR04" H 11650 8200 50  0001 C CNN
+F 1 "Earth" H 11650 8300 50  0001 C CNN
+F 2 "" H 11650 8450 50  0000 C CNN
+F 3 "" H 11650 8450 50  0000 C CNN
+	1    11650 8450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9850 7250
+NoConn ~ 9850 4950
+NoConn ~ 9850 5150
+NoConn ~ 9850 5250
+NoConn ~ 9850 5350
+NoConn ~ 9850 5450
+NoConn ~ 9850 5550
+NoConn ~ 9850 5650
+NoConn ~ 9850 5750
+NoConn ~ 9850 6450
+NoConn ~ 9850 6550
+Text Label 9150 5850 2    60   ~ 0
+I2C_CAM_CLK
+Text Label 9200 6000 2    60   ~ 0
+I2C_CAM_DAT
+Text Label 9100 6650 2    60   ~ 0
+CAM0_MCLK
+Text Label 9050 6750 2    60   ~ 0
+CAM0_PWR
+Text Label 9000 6850 2    60   ~ 0
+CAM0_RST
+Text Label 9200 6950 2    60   ~ 0
+CAM_FLASH_EN
+Text Label 9150 7150 2    60   ~ 0
+JETSON_1V2
+Text Label 9250 7350 2    60   ~ 0
+I2C_GP0_CLK_1V8
+Text Label 9050 7450 2    60   ~ 0
+I2C_GP0_DAT_1V8
+Text Label 12500 6350 0    60   ~ 0
+CAM_VSYNC
+Text Label 12950 7150 0    60   ~ 0
+JETSON_1V8
+NoConn ~ 11500 2950
+NoConn ~ 11500 3050
+NoConn ~ 11500 3250
+NoConn ~ 11500 3350
+NoConn ~ 11500 3550
+NoConn ~ 11500 3650
+NoConn ~ 11500 3850
+NoConn ~ 11500 3950
+NoConn ~ 11500 4150
+NoConn ~ 11500 4250
+NoConn ~ 11500 4450
+NoConn ~ 11500 4550
+NoConn ~ 11500 4950
+NoConn ~ 11500 5150
+NoConn ~ 11500 5250
+NoConn ~ 11500 5350
+NoConn ~ 11500 5450
+NoConn ~ 11500 5550
+NoConn ~ 11500 5650
+NoConn ~ 11500 5750
+NoConn ~ 11500 5850
+NoConn ~ 11500 5950
+NoConn ~ 9850 2950
+NoConn ~ 9850 3050
+NoConn ~ 9850 3250
+NoConn ~ 9850 3350
+NoConn ~ 9850 3550
+NoConn ~ 9850 3650
+NoConn ~ 9850 3850
+NoConn ~ 9850 3950
+NoConn ~ 9850 4150
+NoConn ~ 9850 4250
+NoConn ~ 9850 4450
+NoConn ~ 9850 4550
+Text Label 8900 4750 0    60   ~ 0
+DVDD_CAM_LV
+Text Label 11750 4750 0    60   ~ 0
+DVDD_CAM_LV
+Text Label 6200 4750 0    60   ~ 0
+DVDD_CAM_LV
+Text Label 3900 4750 2    60   ~ 0
+DVDD_CAM_LV
+Text Label 6350 7950 0    60   ~ 0
+VDD_SYS
+Text Label 11950 7950 0    60   ~ 0
+VDD_SYS
+Text Label 6200 7450 0    60   ~ 0
+VDD_3V3
+Text Label 11950 7450 0    60   ~ 0
+VDD_3V3
+Text Label 12200 6150 0    60   ~ 0
+AVDD_CAM
+Text Label 12200 6250 0    60   ~ 0
+VDD_AF
+Text Label 6250 6150 0    60   ~ 0
+AVDD_CAM
+Text Label 6250 6250 0    60   ~ 0
+VDD_AF
+Text Label 3050 6150 0    60   ~ 0
+VDD_CAM_FQ_HV_CAM
+Text Label 9500 6150 2    60   ~ 0
+VDD_CAM_FQ_HV_CAM
+Text Label 9050 7550 0    60   ~ 0
+VDD_IR
+Text Label 8950 7650 0    60   ~ 0
+IR_READY
+Text Label 8850 7750 0    60   ~ 0
+IR_TRIGGER
+Text Label 8950 7950 0    60   ~ 0
+CAM_INTR
+Text Label 9000 8050 0    60   ~ 0
+VSYS_EN
+Text Label 4000 7550 2    60   ~ 0
+VDD_IR
+Text Label 4000 7650 2    60   ~ 0
+IR_READY
+Text Label 4000 7750 2    60   ~ 0
+IR_TRIGGER
+Text Label 4000 7950 2    60   ~ 0
+CAM_INTR
+Text Label 4000 8050 2    60   ~ 0
+VSYS_EN
+Text Label 3950 6350 2    60   ~ 0
+CAM_AF_PWDN
+Text Label 9400 6350 2    60   ~ 0
+CAM_AF_PWDN
+$Comp
+L TX2_Symbols:TEST_1P VSYS1
+U 1 1 5B8C160D
+P 11900 8150
+F 0 "VSYS1" V 11850 8350 50  0000 C CNN
+F 1 "TestP" V 12000 8300 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 12100 8150 50  0001 C CNN
+F 3 "" H 12100 8150 50  0001 C CNN
+	1    11900 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P V3.3
+U 1 1 5B8C27E3
+P 11900 7600
+F 0 "V3.3" V 11850 7800 50  0000 C CNN
+F 1 "TestP" V 12000 7750 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 12100 7600 50  0001 C CNN
+F 3 "" H 12100 7600 50  0001 C CNN
+	1    11900 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11500 7150 12650 7150
+Wire Wire Line
+	11500 6350 13100 6350
+Wire Wire Line
+	8250 6850 9850 6850
+Wire Wire Line
+	8450 7150 9850 7150
+Wire Wire Line
+	7750 7350 9850 7350
+Wire Wire Line
+	7450 7450 9850 7450
+Wire Wire Line
+	7600 6950 9850 6950
+Wire Wire Line
+	7800 6750 9850 6750
+Wire Wire Line
+	8400 6650 9850 6650
+Wire Wire Line
+	9350 6000 9350 5950
+Wire Wire Line
+	8250 6000 9350 6000
+Wire Wire Line
+	8250 5850 9850 5850
+Wire Wire Line
+	9350 5950 9850 5950
+Connection ~ 9600 6050
+Wire Wire Line
+	9600 6050 9850 6050
+Connection ~ 11650 3150
+Wire Wire Line
+	11650 3150 11500 3150
+Connection ~ 11650 2850
+Wire Wire Line
+	11650 2850 11500 2850
+Connection ~ 11650 2550
+Wire Wire Line
+	11500 2250 11650 2250
+Connection ~ 11650 3450
+Wire Wire Line
+	11500 2550 11650 2550
+Connection ~ 11650 3750
+Wire Wire Line
+	11650 3750 11500 3750
+Connection ~ 11650 4050
+Wire Wire Line
+	11650 4050 11500 4050
+Connection ~ 11650 4350
+Wire Wire Line
+	11650 3450 11500 3450
+Connection ~ 11650 4650
+Wire Wire Line
+	11650 4350 11500 4350
+Connection ~ 11650 6050
+Wire Wire Line
+	11650 4650 11500 4650
+Connection ~ 11650 7050
+Wire Wire Line
+	11650 6050 11500 6050
+Wire Wire Line
+	11650 2250 11650 2550
+Connection ~ 9600 7050
+Wire Wire Line
+	9600 7050 9850 7050
+Wire Wire Line
+	11650 7050 11500 7050
+Connection ~ 14300 6750
+Wire Wire Line
+	14300 6750 14500 6750
+Connection ~ 14300 6450
+Wire Wire Line
+	14300 6450 14500 6450
+Connection ~ 14300 6150
+Wire Wire Line
+	14300 6150 14500 6150
+Connection ~ 14300 5850
+Wire Wire Line
+	14300 5850 14500 5850
+Connection ~ 14300 5500
+Wire Wire Line
+	14300 5500 14500 5500
+Connection ~ 14300 5150
+Wire Wire Line
+	14300 5150 14500 5150
+Wire Wire Line
+	14300 3950 14300 4250
+Connection ~ 14300 4850
+Wire Wire Line
+	14300 4850 14500 4850
+Connection ~ 14300 4550
+Wire Wire Line
+	14300 4550 14500 4550
+Connection ~ 14300 4250
+Wire Wire Line
+	14500 4250 14300 4250
+Wire Wire Line
+	14500 3950 14300 3950
+Wire Wire Line
+	9850 2750 8800 2750
+Wire Wire Line
+	9850 2650 8800 2650
+Wire Wire Line
+	9850 2450 8800 2450
+Wire Wire Line
+	9850 2350 8800 2350
+Connection ~ 9600 4650
+Wire Wire Line
+	9600 4650 9850 4650
+Connection ~ 9600 4350
+Wire Wire Line
+	9600 4350 9850 4350
+Connection ~ 9600 4050
+Wire Wire Line
+	9600 4050 9850 4050
+Connection ~ 9600 3750
+Wire Wire Line
+	9600 3750 9850 3750
+Connection ~ 9600 3450
+Wire Wire Line
+	9600 3450 9850 3450
+Connection ~ 9600 3150
+Wire Wire Line
+	9600 3150 9850 3150
+Connection ~ 9600 2850
+Wire Wire Line
+	9600 2850 9850 2850
+Connection ~ 9600 2550
+Wire Wire Line
+	9850 2550 9600 2550
+Wire Wire Line
+	9600 2250 9600 2550
+Wire Wire Line
+	9850 2250 9600 2250
+Wire Wire Line
+	8800 2150 9850 2150
+Wire Wire Line
+	9850 2050 8800 2050
+Wire Wire Line
+	11500 2750 12100 2750
+Wire Wire Line
+	11500 2650 12100 2650
+Wire Wire Line
+	11500 2150 12150 2150
+Wire Wire Line
+	11500 2050 12150 2050
+Wire Wire Line
+	7200 2750 7850 2750
+Wire Wire Line
+	7650 2650 7850 2650
+Wire Wire Line
+	7650 2150 7850 2150
+Wire Wire Line
+	7200 2050 7850 2050
+Wire Wire Line
+	2200 2750 1500 2750
+Wire Wire Line
+	2700 2650 1500 2650
+Wire Wire Line
+	2200 2450 1500 2450
+Wire Wire Line
+	2700 2350 1500 2350
+Wire Wire Line
+	2700 2050 1500 2050
+Wire Wire Line
+	2200 2150 1500 2150
+Connection ~ 4150 8350
+Wire Wire Line
+	4150 8350 4250 8350
+Connection ~ 4150 8250
+Wire Wire Line
+	4150 8250 4250 8250
+Wire Wire Line
+	3200 7150 4250 7150
+Wire Notes Line
+	6900 10750 6900 9750
+Wire Notes Line
+	8700 10750 6900 10750
+Wire Notes Line
+	8700 9750 8700 10750
+Wire Notes Line
+	6900 9750 8700 9750
+Wire Wire Line
+	5900 7150 6100 7150
+Connection ~ 6000 7050
+Connection ~ 6000 6050
+Wire Wire Line
+	6000 7050 5900 7050
+Connection ~ 6000 5550
+Wire Wire Line
+	6000 6050 5900 6050
+Connection ~ 6000 4650
+Wire Wire Line
+	6000 5550 5900 5550
+Connection ~ 6000 4350
+Wire Wire Line
+	6000 4650 5900 4650
+Connection ~ 6000 4050
+Wire Wire Line
+	6000 4350 5900 4350
+Connection ~ 6000 3750
+Wire Wire Line
+	6000 4050 5900 4050
+Connection ~ 6000 3450
+Wire Wire Line
+	6000 3750 5900 3750
+Connection ~ 6000 3150
+Wire Wire Line
+	6000 3450 5900 3450
+Connection ~ 6000 2850
+Wire Wire Line
+	6000 3150 5900 3150
+Connection ~ 6000 2550
+Wire Wire Line
+	6000 2850 5900 2850
+Wire Wire Line
+	6000 2550 5900 2550
+Wire Wire Line
+	6000 2250 6000 2550
+Wire Wire Line
+	5900 2250 6000 2250
+Connection ~ 4150 6050
+Connection ~ 4150 7050
+Connection ~ 4150 4650
+Wire Wire Line
+	4150 6050 4250 6050
+Connection ~ 4150 4350
+Wire Wire Line
+	4150 4650 4250 4650
+Connection ~ 4150 4050
+Wire Wire Line
+	4150 4350 4250 4350
+Connection ~ 4150 3750
+Wire Wire Line
+	4150 4050 4250 4050
+Connection ~ 4150 3450
+Wire Wire Line
+	4150 3750 4250 3750
+Connection ~ 4150 3150
+Wire Wire Line
+	4150 3450 4250 3450
+Connection ~ 4150 2850
+Wire Wire Line
+	4150 3150 4250 3150
+Connection ~ 4150 2550
+Wire Wire Line
+	4150 2850 4250 2850
+Wire Wire Line
+	4150 2550 4250 2550
+Wire Wire Line
+	4250 2250 4150 2250
+Wire Wire Line
+	4150 2250 4150 2550
+Wire Wire Line
+	4150 7050 4250 7050
+Wire Wire Line
+	5900 6350 6600 6350
+Wire Wire Line
+	3250 6950 4250 6950
+Wire Wire Line
+	3250 6850 4250 6850
+Wire Wire Line
+	3400 6750 4250 6750
+Wire Wire Line
+	3400 6650 4250 6650
+Wire Wire Line
+	3250 7450 4250 7450
+Wire Wire Line
+	3200 7350 4250 7350
+Wire Wire Line
+	3850 5950 4250 5950
+Wire Wire Line
+	3850 5850 4250 5850
+Wire Wire Line
+	5900 2750 6900 2750
+Wire Wire Line
+	5900 2650 7350 2650
+Wire Wire Line
+	5900 2150 7350 2150
+Wire Wire Line
+	5900 2050 6900 2050
+Wire Wire Line
+	2500 2750 4250 2750
+Wire Wire Line
+	4250 2650 3000 2650
+Wire Wire Line
+	2500 2450 4250 2450
+Wire Wire Line
+	3000 2350 4250 2350
+Wire Wire Line
+	2500 2150 4250 2150
+Wire Wire Line
+	3000 2050 4250 2050
+Wire Wire Line
+	8900 4750 9750 4750
+Wire Wire Line
+	9850 4850 9750 4850
+Wire Wire Line
+	9750 4850 9750 4750
+Connection ~ 9750 4750
+Wire Wire Line
+	11500 4750 11550 4750
+Wire Wire Line
+	11500 4850 11550 4850
+Wire Wire Line
+	11550 4850 11550 4750
+Connection ~ 11550 4750
+Wire Wire Line
+	5900 4750 5950 4750
+Wire Wire Line
+	5900 4850 5950 4850
+Wire Wire Line
+	5950 4850 5950 4750
+Connection ~ 5950 4750
+Wire Wire Line
+	3900 4750 4200 4750
+Wire Wire Line
+	4250 4850 4200 4850
+Wire Wire Line
+	4200 4850 4200 4750
+Connection ~ 4200 4750
+Wire Wire Line
+	5900 7950 5950 7950
+Wire Wire Line
+	5900 8050 5950 8050
+Wire Wire Line
+	5950 8050 5950 7950
+Connection ~ 5950 7950
+Wire Wire Line
+	5900 7850 6000 7850
+Connection ~ 6000 7850
+Wire Wire Line
+	4250 7850 4150 7850
+Connection ~ 4150 7850
+Wire Wire Line
+	11500 7850 11650 7850
+Connection ~ 11650 7850
+Wire Wire Line
+	11500 7950 11550 7950
+Wire Wire Line
+	11500 8050 11550 8050
+Wire Wire Line
+	11550 8050 11550 7950
+Connection ~ 11550 7950
+Wire Wire Line
+	9850 7850 9600 7850
+Connection ~ 9600 7850
+Wire Wire Line
+	5900 7450 5950 7450
+Wire Wire Line
+	5900 7550 5950 7550
+Wire Wire Line
+	5950 7550 5950 7450
+Connection ~ 5950 7450
+Wire Wire Line
+	11500 7450 11550 7450
+Wire Wire Line
+	11500 7550 11550 7550
+Wire Wire Line
+	11550 7550 11550 7450
+Connection ~ 11550 7450
+Wire Wire Line
+	11500 6150 13450 6150
+Wire Wire Line
+	11500 6250 13650 6250
+Wire Wire Line
+	5900 6150 6250 6150
+Wire Wire Line
+	5900 6250 6250 6250
+Wire Wire Line
+	3050 6150 4050 6150
+Wire Wire Line
+	4250 6250 4050 6250
+Wire Wire Line
+	4050 6250 4050 6150
+Connection ~ 4050 6150
+Wire Wire Line
+	8500 6150 9750 6150
+Wire Wire Line
+	9850 6250 9750 6250
+Wire Wire Line
+	9750 6250 9750 6150
+Connection ~ 9750 6150
+Wire Wire Line
+	9850 7550 8350 7550
+Wire Wire Line
+	9850 7650 8800 7650
+Wire Wire Line
+	9850 7750 8350 7750
+Wire Wire Line
+	9850 7950 8800 7950
+Wire Wire Line
+	9850 8050 8350 8050
+Wire Wire Line
+	4250 7550 4000 7550
+Wire Wire Line
+	4250 7650 4000 7650
+Wire Wire Line
+	4250 7750 4000 7750
+Wire Wire Line
+	4250 7950 4000 7950
+Wire Wire Line
+	4250 8050 4000 8050
+Wire Wire Line
+	4250 6350 3950 6350
+Wire Wire Line
+	8600 6350 9850 6350
+Wire Wire Line
+	11900 8150 11800 8150
+Wire Wire Line
+	11800 8150 11800 7950
+Connection ~ 11800 7950
+Wire Wire Line
+	11900 7600 11850 7600
+Wire Wire Line
+	11850 7600 11850 7450
+Connection ~ 11850 7450
+$Comp
+L TX2_Symbols:TEST_1P V1.8
+U 1 1 5BA22044
+P 12750 7400
+F 0 "V1.8" V 12700 7600 50  0000 C CNN
+F 1 "TestP" V 12850 7550 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 12950 7400 50  0001 C CNN
+F 3 "" H 12950 7400 50  0001 C CNN
+	1    12750 7400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12650 7150 12650 7400
+Wire Wire Line
+	12650 7400 12750 7400
+Connection ~ 12650 7150
+$Comp
+L TX2_Symbols:TEST_1P V1.2
+U 1 1 5BA2257D
+P 8450 7150
+F 0 "V1.2" V 8400 7350 50  0000 C CNN
+F 1 "TestP" V 8550 7300 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8650 7150 50  0001 C CNN
+F 3 "" H 8650 7150 50  0001 C CNN
+	1    8450 7150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P PWR1
+U 1 1 5BA24490
+P 7800 6750
+F 0 "PWR1" V 7850 6800 50  0000 C CNN
+F 1 "TestP" V 7800 7050 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8000 6750 50  0001 C CNN
+F 3 "" H 8000 6750 50  0001 C CNN
+	1    7800 6750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P FLASH_EN1
+U 1 1 5BA2459C
+P 7600 6950
+F 0 "FLASH_EN1" V 7650 6950 50  0000 C CNN
+F 1 "TestP" V 7600 7250 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 7800 6950 50  0001 C CNN
+F 3 "" H 7800 6950 50  0001 C CNN
+	1    7600 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P MCLK1
+U 1 1 5BA249A2
+P 8400 6650
+F 0 "MCLK1" V 8450 6700 50  0000 C CNN
+F 1 "TestP" V 8400 6950 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8600 6650 50  0001 C CNN
+F 3 "" H 8600 6650 50  0001 C CNN
+	1    8400 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P RST1
+U 1 1 5BA24A28
+P 8250 6850
+F 0 "RST1" V 8300 6900 50  0000 C CNN
+F 1 "TestP" V 8250 7150 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8450 6850 50  0001 C CNN
+F 3 "" H 8450 6850 50  0001 C CNN
+	1    8250 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P I2C_DAT2
+U 1 1 5BA2560B
+P 7450 7450
+F 0 "I2C_DAT2" V 7400 7650 50  0000 C CNN
+F 1 "TestP" V 7450 7800 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 7650 7450 50  0001 C CNN
+F 3 "" H 7650 7450 50  0001 C CNN
+	1    7450 7450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P I2C_CLK2
+U 1 1 5BA256F4
+P 7750 7350
+F 0 "I2C_CLK2" V 7800 7300 50  0000 C CNN
+F 1 "TestP" V 7750 7600 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 7950 7350 50  0001 C CNN
+F 3 "" H 7950 7350 50  0001 C CNN
+	1    7750 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P VSYNC1
+U 1 1 5BA25CCE
+P 13100 6350
+F 0 "VSYNC1" V 13200 6500 50  0000 C CNN
+F 1 "TestP" V 13200 6500 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 13300 6350 50  0001 C CNN
+F 3 "" H 13300 6350 50  0001 C CNN
+	1    13100 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P I2C_CLK1
+U 1 1 5BA265C9
+P 8250 5850
+F 0 "I2C_CLK1" V 8300 5900 50  0000 C CNN
+F 1 "TestP" V 8250 6150 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8450 5850 50  0001 C CNN
+F 3 "" H 8450 5850 50  0001 C CNN
+	1    8250 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P I2C_DAT1
+U 1 1 5BA26660
+P 8250 6000
+F 0 "I2C_DAT1" V 8300 6050 50  0000 C CNN
+F 1 "TestP" V 8250 6300 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8450 6000 50  0001 C CNN
+F 3 "" H 8450 6000 50  0001 C CNN
+	1    8250 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14550 7100 14300 7100
+Connection ~ 14300 7100
+Wire Wire Line
+	14550 7300 14300 7300
+Connection ~ 14300 7300
+Wire Wire Line
+	14550 7550 14300 7550
+Connection ~ 14300 7550
+Wire Wire Line
+	14550 7750 14300 7750
+Connection ~ 14300 7750
+$Comp
+L TX2_Symbols:TEST_1P T9
+U 1 1 5BA292BC
+P 12500 4750
+F 0 "T9" V 12550 4800 50  0000 C CNN
+F 1 "TestP" V 12500 5050 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 12700 4750 50  0001 C CNN
+F 3 "" H 12700 4750 50  0001 C CNN
+	1    12500 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P T8
+U 1 1 5BA293CD
+P 8350 7550
+F 0 "T8" V 8400 7600 50  0000 C CNN
+F 1 "TestP" V 8350 7850 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8550 7550 50  0001 C CNN
+F 3 "" H 8550 7550 50  0001 C CNN
+	1    8350 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P T5
+U 1 1 5BA294FF
+P 8800 7650
+F 0 "T5" V 8850 7700 50  0000 C CNN
+F 1 "TestP" V 8800 7950 50  0000 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 9000 7650 50  0001 C CNN
+F 3 "" H 9000 7650 50  0001 C CNN
+	1    8800 7650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P T3
+U 1 1 5BA29599
+P 8350 7750
+F 0 "T3" V 8400 7800 50  0000 C CNN
+F 1 "TestP" V 8350 8050 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8550 7750 50  0001 C CNN
+F 3 "" H 8550 7750 50  0001 C CNN
+	1    8350 7750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P T6
+U 1 1 5BA2962E
+P 8800 7950
+F 0 "T6" V 8850 8000 50  0000 C CNN
+F 1 "TestP" V 8800 8250 50  0000 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 9000 7950 50  0001 C CNN
+F 3 "" H 9000 7950 50  0001 C CNN
+	1    8800 7950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P T7
+U 1 1 5BA296CA
+P 8350 8050
+F 0 "T7" V 8400 8100 50  0000 C CNN
+F 1 "TestP" V 8350 8350 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8550 8050 50  0001 C CNN
+F 3 "" H 8550 8050 50  0001 C CNN
+	1    8350 8050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P T1
+U 1 1 5BA29BF5
+P 8500 6150
+F 0 "T1" V 8550 6200 50  0000 C CNN
+F 1 "TestP" V 8500 6450 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8700 6150 50  0001 C CNN
+F 3 "" H 8700 6150 50  0001 C CNN
+	1    8500 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P T2
+U 1 1 5BA29E8C
+P 8600 6350
+F 0 "T2" V 8650 6400 50  0000 C CNN
+F 1 "TestP" V 8600 6650 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 8800 6350 50  0001 C CNN
+F 3 "" H 8800 6350 50  0001 C CNN
+	1    8600 6350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P T10
+U 1 1 5BA2A5E9
+P 13450 6150
+F 0 "T10" V 13500 6200 50  0000 C CNN
+F 1 "TestP" V 13450 6450 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 13650 6150 50  0001 C CNN
+F 3 "" H 13650 6150 50  0001 C CNN
+	1    13450 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P T11
+U 1 1 5BA2A7D5
+P 13650 6250
+F 0 "T11" V 13700 6300 50  0000 C CNN
+F 1 "TestP" V 13650 6550 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 13850 6250 50  0001 C CNN
+F 3 "" H 13850 6250 50  0001 C CNN
+	1    13650 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9600 6050 9600 7050
+Wire Wire Line
+	11650 3150 11650 3450
+Wire Wire Line
+	11650 2850 11650 3150
+Wire Wire Line
+	11650 2550 11650 2850
+Wire Wire Line
+	11650 3450 11650 3750
+Wire Wire Line
+	11650 3750 11650 4050
+Wire Wire Line
+	11650 4050 11650 4350
+Wire Wire Line
+	11650 4350 11650 4650
+Wire Wire Line
+	11650 4650 11650 6050
+Wire Wire Line
+	11650 6050 11650 7050
+Wire Wire Line
+	11650 7050 11650 7850
+Wire Wire Line
+	9600 7050 9600 7850
+Wire Wire Line
+	14300 6750 14300 7100
+Wire Wire Line
+	14300 6450 14300 6750
+Wire Wire Line
+	14300 6150 14300 6450
+Wire Wire Line
+	14300 5850 14300 6150
+Wire Wire Line
+	14300 5500 14300 5850
+Wire Wire Line
+	14300 5150 14300 5500
+Wire Wire Line
+	14300 4850 14300 5150
+Wire Wire Line
+	14300 4550 14300 4850
+Wire Wire Line
+	14300 4250 14300 4550
+Wire Wire Line
+	9600 4650 9600 6050
+Wire Wire Line
+	9600 4350 9600 4650
+Wire Wire Line
+	9600 4050 9600 4350
+Wire Wire Line
+	9600 3750 9600 4050
+Wire Wire Line
+	9600 3450 9600 3750
+Wire Wire Line
+	9600 3150 9600 3450
+Wire Wire Line
+	9600 2850 9600 3150
+Wire Wire Line
+	9600 2550 9600 2850
+Wire Wire Line
+	4150 8350 4150 8600
+Wire Wire Line
+	4150 8250 4150 8350
+Wire Wire Line
+	6000 7050 6000 7850
+Wire Wire Line
+	6000 6050 6000 7050
+Wire Wire Line
+	6000 5550 6000 6050
+Wire Wire Line
+	6000 4650 6000 5550
+Wire Wire Line
+	6000 4350 6000 4650
+Wire Wire Line
+	6000 4050 6000 4350
+Wire Wire Line
+	6000 3750 6000 4050
+Wire Wire Line
+	6000 3450 6000 3750
+Wire Wire Line
+	6000 3150 6000 3450
+Wire Wire Line
+	6000 2850 6000 3150
+Wire Wire Line
+	6000 2550 6000 2850
+Wire Wire Line
+	4150 6050 4150 7050
+Wire Wire Line
+	4150 7050 4150 7850
+Wire Wire Line
+	4150 4650 4150 6050
+Wire Wire Line
+	4150 4350 4150 4650
+Wire Wire Line
+	4150 4050 4150 4350
+Wire Wire Line
+	4150 3750 4150 4050
+Wire Wire Line
+	4150 3450 4150 3750
+Wire Wire Line
+	4150 3150 4150 3450
+Wire Wire Line
+	4150 2850 4150 3150
+Wire Wire Line
+	4150 2550 4150 2850
+Wire Wire Line
+	9750 4750 9850 4750
+Wire Wire Line
+	11550 4750 12500 4750
+Wire Wire Line
+	5950 4750 6200 4750
+Wire Wire Line
+	4200 4750 4250 4750
+Wire Wire Line
+	5950 7950 6350 7950
+Wire Wire Line
+	6000 7850 6000 8200
+Wire Wire Line
+	4150 7850 4150 8250
+Wire Wire Line
+	11650 7850 11650 8450
+Wire Wire Line
+	11550 7950 11800 7950
+Wire Wire Line
+	9600 7850 9600 8450
+Wire Wire Line
+	5950 7450 6200 7450
+Wire Wire Line
+	11550 7450 11850 7450
+Wire Wire Line
+	4050 6150 4250 6150
+Wire Wire Line
+	9750 6150 9850 6150
+Wire Wire Line
+	11800 7950 11950 7950
+Wire Wire Line
+	11850 7450 11950 7450
+Wire Wire Line
+	12650 7150 12950 7150
+Wire Wire Line
+	14300 7100 14300 7300
+Wire Wire Line
+	14300 7300 14300 7550
+Wire Wire Line
+	14300 7550 14300 7750
+Wire Wire Line
+	14300 7750 14300 8300
+$Comp
+L TX2_Symbols:R R2
+U 1 1 5A5F3085
+P 2850 2050
+F 0 "R2" V 2930 2050 50  0000 C CNN
+F 1 "0" V 2850 2050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2780 2050 50  0001 C CNN
+F 3 "" H 2850 2050 50  0001 C CNN
+	1    2850 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P GND4
+U 1 1 5BA2777D
+P 14550 7750
+F 0 "GND4" V 14550 8050 50  0000 C CNN
+F 1 "TestP" V 14650 7900 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 14750 7750 50  0001 C CNN
+F 3 "" H 14750 7750 50  0001 C CNN
+	1    14550 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P GND3
+U 1 1 5BA276F7
+P 14550 7550
+F 0 "GND3" V 14550 7850 50  0000 C CNN
+F 1 "TestP" V 14650 7700 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 14750 7550 50  0001 C CNN
+F 3 "" H 14750 7550 50  0001 C CNN
+	1    14550 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P GND2
+U 1 1 5BA27674
+P 14550 7300
+F 0 "GND2" V 14550 7600 50  0000 C CNN
+F 1 "TestP" V 14650 7450 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 14750 7300 50  0001 C CNN
+F 3 "" H 14750 7300 50  0001 C CNN
+	1    14550 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:TEST_1P GND1
+U 1 1 5BA271AF
+P 14550 7100
+F 0 "GND1" V 14550 7400 50  0000 C CNN
+F 1 "TestP" V 14650 7250 50  0001 C CNN
+F 2 "Test_Point_Keystone_5000-5004_Miniature" H 14750 7100 50  0001 C CNN
+F 3 "" H 14750 7100 50  0001 C CNN
+	1    14550 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L TX2_Symbols:Conn_01x01 J26
+U 1 1 5B81DEE2
+P 14700 6750
+F 0 "J26" H 14700 6850 50  0000 C CNN
+F 1 "Conn_01x01" H 14700 6650 50  0000 C CNN
+F 2 "hdmi3dmix:ground_probe" H 14700 6750 50  0001 C CNN
+F 3 "" H 14700 6750 50  0001 C CNN
+	1    14700 6750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
