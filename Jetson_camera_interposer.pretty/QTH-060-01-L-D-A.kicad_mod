@@ -1,4 +1,4 @@
-(module QTH-060-01-X-D-A-QTH-060-01-X-D-A (layer F.Cu) (tedit 613B2864)
+(module QTH-060-01-L-D-A (layer F.Cu) (tedit 613C8725)
   (descr "HIGH SPEED TERMINAL STRIP, .5MM PITCH, 120 PINS.")
   (tags "HIGH SPEED TERMINAL STRIP, .5MM PITCH, 120 PINS.")
   (attr smd)
@@ -162,7 +162,7 @@
   (pad 3 smd rect (at -16.74876 -3.08864) (size 0.29972 1.4478) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -17.24914 3.08864) (size 0.29972 1.4478) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at -17.24914 -3.08864) (size 0.29972 1.4478) (layers F.Cu F.Paste F.Mask))
-  (model D:/Projects/HDMI3DMixer/Kicad/VR3D_Shapes/QTH-060-01-H-D-A.wrl
+  (model QTH-060-01-L-D-A.wrl
     (at (xyz 0 0 0))
     (scale (xyz 10 10 10))
     (rotate (xyz -90 0 0))
