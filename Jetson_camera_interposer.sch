@@ -130,8 +130,6 @@ Text Label 6800 2650 2    60   ~ 0
 CSI1_D1_P
 Text Label 6800 2750 2    60   ~ 0
 CSI1_D1_N
-Text Label 3000 2050 0    60   ~ 0
-CSI0_D0_P
 Text Label 3000 2150 0    60   ~ 0
 CSI0_D0_N
 Text Label 3000 2350 0    60   ~ 0
@@ -246,49 +244,49 @@ F 3 "" H 7050 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 7850 2050 0    60   ~ 0
-MUXED_1_D2_P
+R_CSI1_D0_P
 Text Label 7850 2150 0    60   ~ 0
-MUXED_1_D2_N
+R_CSI1_D0_N
 Text Label 7850 2650 0    60   ~ 0
-MUXED_1_D3_P
+R_CSI1_D1_P
 Text Label 7850 2750 0    60   ~ 0
-MUXED_1_D3_N
+R_CSI1_D1_N
 Text Label 1500 2050 0    60   ~ 0
-MUXED_1_D0_P
+R_CSI0_D0_P
 Text Label 1500 2150 0    60   ~ 0
-MUXED_1_D0_N
+R_CSI0_D0_N
 Text Label 1500 2350 0    60   ~ 0
-MUXED_1_CLK_P
+R_CSI0_CLK_P
 Text Label 1500 2450 0    60   ~ 0
-MUXED_1_CLK_N
+R_CSI0_CLK_N
 Text Label 1500 2650 0    60   ~ 0
-MUXED_1_D1_P
+R_CSI0_D1_P
 Text Label 1500 2750 0    60   ~ 0
-MUXED_1_D1_N
+R_CSI0_D1_N
 NoConn ~ 5900 3250
 NoConn ~ 5900 3350
 NoConn ~ 5900 3550
 NoConn ~ 5900 3650
 Text Label 12150 2050 0    60   ~ 0
-MUXED_1_D2_P
+R_CSI1_D0_P
 Text Label 12150 2150 0    60   ~ 0
-MUXED_1_D2_N
+R_CSI1_D0_N
 Text Label 12100 2650 0    60   ~ 0
-MUXED_1_D3_P
+R_CSI1_D1_P
 Text Label 12100 2750 0    60   ~ 0
-MUXED_1_D3_N
+R_CSI1_D1_N
 Text Label 8800 2050 0    60   ~ 0
-MUXED_1_D0_P
+R_CSI0_D0_P
 Text Label 8800 2150 0    60   ~ 0
-MUXED_1_D0_N
+R_CSI0_D0_N
 Text Label 8800 2350 0    60   ~ 0
-MUXED_1_CLK_P
+R_CSI0_CLK_P
 Text Label 8800 2450 0    60   ~ 0
-MUXED_1_CLK_N
+R_CSI0_CLK_N
 Text Label 8800 2650 0    60   ~ 0
-MUXED_1_D1_P
+R_CSI0_D1_P
 Text Label 8800 2750 0    60   ~ 0
-MUXED_1_D1_N
+R_CSI0_D1_N
 $Comp
 L TX2_Symbols:Conn_01x01 J3
 U 1 1 5A60149C
@@ -1467,4 +1465,6 @@ F 3 "" H 14700 6750 50  0001 C CNN
 	1    14700 6750
 	1    0    0    -1  
 $EndComp
+Text Label 3000 2050 0    60   ~ 0
+CSI0_D0_P
 $EndSCHEMATC
