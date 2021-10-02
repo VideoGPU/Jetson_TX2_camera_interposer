@@ -77,12 +77,6 @@ NoConn ~ 4250 5450
 NoConn ~ 4250 5550
 NoConn ~ 4250 5650
 NoConn ~ 4250 5750
-NoConn ~ 4250 4450
-NoConn ~ 4250 4550
-NoConn ~ 4250 4150
-NoConn ~ 4250 4250
-NoConn ~ 4250 3950
-NoConn ~ 4250 3850
 NoConn ~ 5900 7250
 NoConn ~ 5900 7350
 NoConn ~ 5900 7650
@@ -99,27 +93,10 @@ NoConn ~ 5900 5250
 NoConn ~ 5900 5350
 NoConn ~ 5900 5450
 NoConn ~ 5900 4950
-NoConn ~ 5900 4450
-NoConn ~ 5900 4550
-NoConn ~ 5900 4150
-NoConn ~ 5900 4250
-NoConn ~ 5900 3850
-NoConn ~ 5900 3950
 Text Label 6100 7150 0    60   ~ 0
 JETSON_1V8
 Text Notes 7150 10650 0    79   ~ 0
 Stackup:\n---High speed signal\n---Ground\n---Slow signals\n---Power\n---Ground\n---High speed signals
-$Comp
-L TX2_Symbols:QSH-060-01-L-D-A J1
-U 1 1 5A5122D0
-P 10400 5050
-F 0 "J1" H 10050 1850 45  0000 L BNN
-F 1 "QSH-060-01-L-D-A" H 10050 8200 45  0000 L BNN
-F 2 "TX2_Footprints:QSH-060-01-L-D-A" H 10080 8200 20  0001 C CNN
-F 3 "" H 10050 8050 60  0001 C CNN
-	1    10400 5050
-	1    0    0    -1  
-$EndComp
 Text Label 3200 7150 0    60   ~ 0
 JETSON_1V2
 Text Label 6900 2050 2    60   ~ 0
@@ -134,7 +111,7 @@ Text Label 3000 2150 0    60   ~ 0
 CSI0_D0_N
 Text Label 3000 2350 0    60   ~ 0
 CSI0_CLK_P
-Text Label 3000 2450 0    60   ~ 0
+Text Label 3050 2450 0    60   ~ 0
 CSI0_CLK_N
 Text Label 3000 2650 0    60   ~ 0
 CSI0_D1_P
@@ -144,149 +121,26 @@ Text Notes 4650 1400 0    60   ~ 0
 Bottom connector
 Text Notes 10350 1650 0    60   ~ 0
 Top connector
-$Comp
-L TX2_Symbols:R R1
-U 1 1 5A5F30D9
-P 2350 2150
-F 0 "R1" V 2430 2150 50  0000 C CNN
-F 1 "0" V 2350 2150 50  0000 C CNN
-F 2 "TX2_Footprints:R_0805" V 2280 2150 50  0001 C CNN
-F 3 "" H 2350 2150 50  0001 C CNN
-	1    2350 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:R R4
-U 1 1 5A5F30FD
-P 2850 2350
-F 0 "R4" V 2930 2350 50  0000 C CNN
-F 1 "0" V 2850 2350 50  0000 C CNN
-F 2 "TX2_Footprints:R_0805" V 2780 2350 50  0001 C CNN
-F 3 "" H 2850 2350 50  0001 C CNN
-	1    2850 2350
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:R R6
-U 1 1 5A5F314B
-P 2850 2650
-F 0 "R6" V 2930 2650 50  0000 C CNN
-F 1 "0" V 2850 2650 50  0000 C CNN
-F 2 "TX2_Footprints:R_0805" V 2780 2650 50  0001 C CNN
-F 3 "" H 2850 2650 50  0001 C CNN
-	1    2850 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:R R3
-U 1 1 5A5F3293
-P 2350 2450
-F 0 "R3" V 2430 2450 50  0000 C CNN
-F 1 "0" V 2350 2450 50  0000 C CNN
-F 2 "TX2_Footprints:R_0805" V 2280 2450 50  0001 C CNN
-F 3 "" H 2350 2450 50  0001 C CNN
-	1    2350 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:R R5
-U 1 1 5A5F32C9
-P 2350 2750
-F 0 "R5" V 2430 2750 50  0000 C CNN
-F 1 "0" V 2350 2750 50  0000 C CNN
-F 2 "TX2_Footprints:R_0805" V 2280 2750 50  0001 C CNN
-F 3 "" H 2350 2750 50  0001 C CNN
-	1    2350 2750
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:R R7
-U 1 1 5A5F4B18
-P 7500 2150
-F 0 "R7" V 7580 2150 50  0000 C CNN
-F 1 "0" V 7500 2150 50  0000 C CNN
-F 2 "TX2_Footprints:R_0805" V 7430 2150 50  0001 C CNN
-F 3 "" H 7500 2150 50  0001 C CNN
-	1    7500 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:R R8
-U 1 1 5A5F4C51
-P 7050 2050
-F 0 "R8" V 7130 2050 50  0000 C CNN
-F 1 "0" V 7050 2050 50  0000 C CNN
-F 2 "TX2_Footprints:R_0805" V 6980 2050 50  0001 C CNN
-F 3 "" H 7050 2050 50  0001 C CNN
-	1    7050 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:R R10
-U 1 1 5A5F4DAE
-P 7500 2650
-F 0 "R10" V 7580 2650 50  0000 C CNN
-F 1 "0" V 7500 2650 50  0000 C CNN
-F 2 "TX2_Footprints:R_0805" V 7430 2650 50  0001 C CNN
-F 3 "" H 7500 2650 50  0001 C CNN
-	1    7500 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:R R9
-U 1 1 5A5F4E04
-P 7050 2750
-F 0 "R9" V 7130 2750 50  0000 C CNN
-F 1 "0" V 7050 2750 50  0000 C CNN
-F 2 "TX2_Footprints:R_0805" V 6980 2750 50  0001 C CNN
-F 3 "" H 7050 2750 50  0001 C CNN
-	1    7050 2750
-	0    1    1    0   
-$EndComp
-Text Label 7850 2050 0    60   ~ 0
-R_CSI1_D0_P
-Text Label 7850 2150 0    60   ~ 0
-R_CSI1_D0_N
-Text Label 7850 2650 0    60   ~ 0
-R_CSI1_D1_P
-Text Label 7850 2750 0    60   ~ 0
-R_CSI1_D1_N
-Text Label 1500 2050 0    60   ~ 0
-R_CSI0_D0_P
-Text Label 1500 2150 0    60   ~ 0
-R_CSI0_D0_N
-Text Label 1500 2350 0    60   ~ 0
-R_CSI0_CLK_P
-Text Label 1500 2450 0    60   ~ 0
-R_CSI0_CLK_N
-Text Label 1500 2650 0    60   ~ 0
-R_CSI0_D1_P
-Text Label 1500 2750 0    60   ~ 0
-R_CSI0_D1_N
-NoConn ~ 5900 3250
-NoConn ~ 5900 3350
-NoConn ~ 5900 3550
-NoConn ~ 5900 3650
 Text Label 12150 2050 0    60   ~ 0
-R_CSI1_D0_P
+CSI1_D0_P
 Text Label 12150 2150 0    60   ~ 0
-R_CSI1_D0_N
+CSI1_D0_N
 Text Label 12100 2650 0    60   ~ 0
-R_CSI1_D1_P
+CSI1_D1_P
 Text Label 12100 2750 0    60   ~ 0
-R_CSI1_D1_N
+CSI1_D1_N
 Text Label 8800 2050 0    60   ~ 0
-R_CSI0_D0_P
+CSI0_D0_P
 Text Label 8800 2150 0    60   ~ 0
-R_CSI0_D0_N
+CSI0_D0_N
 Text Label 8800 2350 0    60   ~ 0
-R_CSI0_CLK_P
+CSI0_CLK_P
 Text Label 8800 2450 0    60   ~ 0
-R_CSI0_CLK_N
+CSI0_CLK_N
 Text Label 8800 2650 0    60   ~ 0
-R_CSI0_D1_P
+CSI0_D1_P
 Text Label 8800 2750 0    60   ~ 0
-R_CSI0_D1_N
+CSI0_D1_N
 $Comp
 L TX2_Symbols:Conn_01x01 J3
 U 1 1 5A60149C
@@ -344,14 +198,6 @@ F 3 "" H 14300 8300 50  0000 C CNN
 	1    14300 8300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5900 2950
-NoConn ~ 5900 3050
-NoConn ~ 4250 2950
-NoConn ~ 4250 3050
-NoConn ~ 4250 3250
-NoConn ~ 4250 3350
-NoConn ~ 4250 3550
-NoConn ~ 4250 3650
 NoConn ~ 5900 2350
 NoConn ~ 5900 2450
 NoConn ~ 11500 2350
@@ -481,18 +327,6 @@ Text Label 12500 6350 0    60   ~ 0
 CAM_VSYNC
 Text Label 12950 7150 0    60   ~ 0
 JETSON_1V8
-NoConn ~ 11500 2950
-NoConn ~ 11500 3050
-NoConn ~ 11500 3250
-NoConn ~ 11500 3350
-NoConn ~ 11500 3550
-NoConn ~ 11500 3650
-NoConn ~ 11500 3850
-NoConn ~ 11500 3950
-NoConn ~ 11500 4150
-NoConn ~ 11500 4250
-NoConn ~ 11500 4450
-NoConn ~ 11500 4550
 NoConn ~ 11500 4950
 NoConn ~ 11500 5150
 NoConn ~ 11500 5250
@@ -503,18 +337,6 @@ NoConn ~ 11500 5650
 NoConn ~ 11500 5750
 NoConn ~ 11500 5850
 NoConn ~ 11500 5950
-NoConn ~ 9850 2950
-NoConn ~ 9850 3050
-NoConn ~ 9850 3250
-NoConn ~ 9850 3350
-NoConn ~ 9850 3550
-NoConn ~ 9850 3650
-NoConn ~ 9850 3850
-NoConn ~ 9850 3950
-NoConn ~ 9850 4150
-NoConn ~ 9850 4250
-NoConn ~ 9850 4450
-NoConn ~ 9850 4550
 Text Label 8900 4750 0    60   ~ 0
 DVDD_CAM_LV
 Text Label 11750 4750 0    60   ~ 0
@@ -734,26 +556,6 @@ Wire Wire Line
 	11500 2150 12150 2150
 Wire Wire Line
 	11500 2050 12150 2050
-Wire Wire Line
-	7200 2750 7850 2750
-Wire Wire Line
-	7650 2650 7850 2650
-Wire Wire Line
-	7650 2150 7850 2150
-Wire Wire Line
-	7200 2050 7850 2050
-Wire Wire Line
-	2200 2750 1500 2750
-Wire Wire Line
-	2700 2650 1500 2650
-Wire Wire Line
-	2200 2450 1500 2450
-Wire Wire Line
-	2700 2350 1500 2350
-Wire Wire Line
-	2700 2050 1500 2050
-Wire Wire Line
-	2200 2150 1500 2150
 Connection ~ 4150 8350
 Wire Wire Line
 	4150 8350 4250 8350
@@ -862,23 +664,21 @@ Wire Wire Line
 Wire Wire Line
 	3850 5850 4250 5850
 Wire Wire Line
-	5900 2750 6900 2750
+	5900 2750 6800 2750
 Wire Wire Line
-	5900 2650 7350 2650
+	5900 2650 6800 2650
 Wire Wire Line
-	5900 2150 7350 2150
+	5900 2150 6800 2150
 Wire Wire Line
 	5900 2050 6900 2050
 Wire Wire Line
-	2500 2750 4250 2750
-Wire Wire Line
 	4250 2650 3000 2650
 Wire Wire Line
-	2500 2450 4250 2450
+	3050 2450 4250 2450
 Wire Wire Line
 	3000 2350 4250 2350
 Wire Wire Line
-	2500 2150 4250 2150
+	3000 2150 4250 2150
 Wire Wire Line
 	3000 2050 4250 2050
 Wire Wire Line
@@ -1400,17 +1200,6 @@ Wire Wire Line
 Wire Wire Line
 	14300 7750 14300 8300
 $Comp
-L TX2_Symbols:R R2
-U 1 1 5A5F3085
-P 2850 2050
-F 0 "R2" V 2930 2050 50  0000 C CNN
-F 1 "0" V 2850 2050 50  0000 C CNN
-F 2 "TX2_Footprints:R_0805" V 2780 2050 50  0001 C CNN
-F 3 "" H 2850 2050 50  0001 C CNN
-	1    2850 2050
-	0    1    1    0   
-$EndComp
-$Comp
 L TX2_Symbols:TEST_1P GND4
 U 1 1 5BA2777D
 P 14550 7750
@@ -1467,4 +1256,209 @@ F 3 "" H 14700 6750 50  0001 C CNN
 $EndComp
 Text Label 3000 2050 0    60   ~ 0
 CSI0_D0_P
+Wire Wire Line
+	9850 2950 8800 2950
+Wire Wire Line
+	9850 3050 8800 3050
+Text Label 8800 2950 0    60   ~ 0
+CSI2_D0_P
+Text Label 8800 3050 0    60   ~ 0
+CSI2_D0_N
+Text Label 3000 2950 0    60   ~ 0
+CSI2_D0_P
+Wire Wire Line
+	3000 2950 4250 2950
+Text Label 3000 3050 0    60   ~ 0
+CSI2_D0_N
+Wire Wire Line
+	3000 3050 4250 3050
+Wire Wire Line
+	3000 2750 4250 2750
+Wire Wire Line
+	9850 3250 8800 3250
+Wire Wire Line
+	9850 3350 8800 3350
+Wire Wire Line
+	9850 3550 8800 3550
+Wire Wire Line
+	9850 3650 8800 3650
+Wire Wire Line
+	9850 3850 8800 3850
+Wire Wire Line
+	9850 3950 8800 3950
+Wire Wire Line
+	9850 4150 8800 4150
+Wire Wire Line
+	9850 4250 8800 4250
+Text Label 8800 3250 0    60   ~ 0
+CSI2_CLK_P
+Text Label 8800 3350 0    60   ~ 0
+CSI2_CLK_N
+Text Label 8800 3550 0    60   ~ 0
+CSI2_D1_P
+Text Label 8800 3650 0    60   ~ 0
+CSI2_D1_N
+Text Label 8800 3850 0    60   ~ 0
+CSI4_D0_P
+Text Label 8800 3950 0    60   ~ 0
+CSI4_D0_N
+Text Label 8800 4150 0    60   ~ 0
+CSI4_CLK_P
+Text Label 8800 4250 0    60   ~ 0
+CSI4_CLK_N
+Wire Wire Line
+	9850 4450 8800 4450
+Wire Wire Line
+	9850 4550 8800 4550
+Text Label 8800 4450 0    60   ~ 0
+CSI4_D1_P
+Text Label 8800 4550 0    60   ~ 0
+CSI4_D1_N
+Wire Wire Line
+	4250 3250 3000 3250
+Wire Wire Line
+	4250 3350 3000 3350
+Wire Wire Line
+	4250 3550 3000 3550
+Wire Wire Line
+	4250 3650 3000 3650
+Wire Wire Line
+	4250 3850 3000 3850
+Wire Wire Line
+	4250 3950 3000 3950
+Wire Wire Line
+	4250 4150 3000 4150
+Wire Wire Line
+	4250 4250 3000 4250
+Wire Wire Line
+	4250 4450 3000 4450
+Wire Wire Line
+	4250 4550 3000 4550
+Text Label 3000 3250 0    60   ~ 0
+CSI2_CLK_P
+Text Label 3000 3350 0    60   ~ 0
+CSI2_CLK_N
+Text Label 3000 3550 0    60   ~ 0
+CSI2_D1_P
+Text Label 3000 3650 0    60   ~ 0
+CSI2_D1_N
+Text Label 3000 3850 0    60   ~ 0
+CSI4_D0_P
+Text Label 3000 3950 0    60   ~ 0
+CSI4_D0_N
+Text Label 3000 4150 0    60   ~ 0
+CSI4_CLK_P
+Text Label 3000 4250 0    60   ~ 0
+CSI4_CLK_N
+Text Label 3000 4450 0    60   ~ 0
+CSI4_D1_P
+Text Label 3000 4550 0    60   ~ 0
+CSI4_D1_N
+$Comp
+L TX2_Symbols:QSH-060-01-L-D-A J1
+U 1 1 5A5122D0
+P 10400 5050
+F 0 "J1" H 10050 1850 45  0000 L BNN
+F 1 "QSH-060-01-L-D-A" H 10050 8200 45  0000 L BNN
+F 2 "TX2_Footprints:QSH-060-01-L-D-A" H 10080 8200 20  0001 C CNN
+F 3 "" H 10050 8050 60  0001 C CNN
+	1    10400 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 2950 12100 2950
+Wire Wire Line
+	11500 3050 12100 3050
+Wire Wire Line
+	11500 3250 12100 3250
+Wire Wire Line
+	11500 3350 12100 3350
+Wire Wire Line
+	11500 3550 12100 3550
+Wire Wire Line
+	11500 3650 12100 3650
+Wire Wire Line
+	11500 3850 12100 3850
+Wire Wire Line
+	11500 3950 12100 3950
+Wire Wire Line
+	11500 4150 12100 4150
+Wire Wire Line
+	11500 4250 12100 4250
+Wire Wire Line
+	11500 4450 12100 4450
+Wire Wire Line
+	11500 4550 12100 4550
+Text Label 12100 2950 0    60   ~ 0
+CSI3_D0_P
+Text Label 12100 3050 0    60   ~ 0
+CSI3_D0_N
+Text Label 12100 3250 0    60   ~ 0
+CSI3_CLK_P
+Text Label 12100 3350 0    60   ~ 0
+CSI3_CLK_N
+Text Label 12100 3550 0    60   ~ 0
+CSI3_D1_P
+Text Label 12100 3650 0    60   ~ 0
+CSI3_D1_N
+Text Label 12100 3850 0    60   ~ 0
+CSI5_D0_P
+Text Label 12100 3950 0    60   ~ 0
+CSI5_D0_N
+Text Label 12100 4150 0    60   ~ 0
+CSI5_CLK_P
+Text Label 12100 4250 0    60   ~ 0
+CSI5_CLK_N
+Text Label 12100 4450 0    60   ~ 0
+CSI5_D1_P
+Text Label 12100 4550 0    60   ~ 0
+CSI5_D1_N
+Wire Wire Line
+	5900 2950 6800 2950
+Wire Wire Line
+	5900 3050 6800 3050
+Wire Wire Line
+	5900 3250 6800 3250
+Wire Wire Line
+	5900 3350 6800 3350
+Wire Wire Line
+	5900 3550 6800 3550
+Wire Wire Line
+	5900 3650 6800 3650
+Wire Wire Line
+	5900 3850 6800 3850
+Wire Wire Line
+	5900 3950 6800 3950
+Wire Wire Line
+	5900 4150 6800 4150
+Wire Wire Line
+	5900 4250 6800 4250
+Wire Wire Line
+	5900 4450 6800 4450
+Wire Wire Line
+	5900 4550 6800 4550
+Text Label 6800 3050 0    60   ~ 0
+CSI3_D0_N
+Text Label 6800 2950 0    60   ~ 0
+CSI3_D0_P
+Text Label 6800 3250 0    60   ~ 0
+CSI3_CLK_P
+Text Label 6800 3350 0    60   ~ 0
+CSI3_CLK_N
+Text Label 6800 3550 0    60   ~ 0
+CSI3_D1_P
+Text Label 6800 3650 0    60   ~ 0
+CSI3_D1_N
+Text Label 6800 3850 0    60   ~ 0
+CSI5_D0_P
+Text Label 6800 3950 0    60   ~ 0
+CSI5_D0_N
+Text Label 6800 4150 0    60   ~ 0
+CSI5_CLK_P
+Text Label 6800 4250 0    60   ~ 0
+CSI5_CLK_N
+Text Label 6800 4450 0    60   ~ 0
+CSI5_D1_P
+Text Label 6800 4550 0    60   ~ 0
+CSI5_D1_N
 $EndSCHEMATC
