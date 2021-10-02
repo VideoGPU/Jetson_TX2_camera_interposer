@@ -1,4 +1,4 @@
-update=09/10/21 18:27:30
+update=10/02/21 11:43:12
 version=1
 last_client=kicad
 [cvpcb]
@@ -9,6 +9,16 @@ version=1
 [eeschema]
 version=1
 LibDir=
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=E:/KicadProjects/Jetson_TX2_camera_interposer
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -248,6 +258,17 @@ dPairWidth=0.1016
 dPairGap=0.2032
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
+Name=Power
+Clearance=0.254
+TrackWidth=0.254
+ViaDiameter=0.254
+ViaDrill=0.2032
+uViaDiameter=0.762
+uViaDrill=0.508
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
 Name=Single_Ended
 Clearance=0.508
 TrackWidth=0.2286
@@ -258,13 +279,3 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=E:/KicadProjects/Jetson_TX2_camera_interposer
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=60
-ERC_TestSimilarLabels=1
