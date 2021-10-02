@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L TX2_Symbols:QTH-060-01-L-D-A J2
-U 1 1 595ACB35
-P 4800 5050
-F 0 "J2" H 4450 1350 45  0000 L BNN
-F 1 "QTH-060-01-L-D-A" H 4450 8200 45  0000 L BNN
-F 2 "TX2_Footprints:QTH-060-01-L-D-A" H 4480 8200 20  0001 C CNN
-F 3 "" H 4450 8050 60  0001 C CNN
-	1    4800 5050
-	1    0    0    -1  
-$EndComp
 Text Notes 8900 10700 0    118  ~ 24
 Stackup:\nSingle Ended: 6 mil\nDifferential:\n4  mil Width, 8 mil spacing\n-----\n0.1 mm height to ground plane\n
 Text Label 3850 5850 2    60   ~ 0
@@ -67,8 +56,6 @@ F 3 "" H 6000 8200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4250 7250
-NoConn ~ 4250 6450
-NoConn ~ 4250 6550
 NoConn ~ 4250 4950
 NoConn ~ 4250 5150
 NoConn ~ 4250 5250
@@ -81,13 +68,6 @@ NoConn ~ 5900 7250
 NoConn ~ 5900 7350
 NoConn ~ 5900 7650
 NoConn ~ 5900 7750
-NoConn ~ 5900 6450
-NoConn ~ 5900 6550
-NoConn ~ 5900 6650
-NoConn ~ 5900 5650
-NoConn ~ 5900 5750
-NoConn ~ 5900 5850
-NoConn ~ 5900 5950
 NoConn ~ 5900 5150
 NoConn ~ 5900 5250
 NoConn ~ 5900 5350
@@ -198,10 +178,6 @@ F 3 "" H 14300 8300 50  0000 C CNN
 	1    14300 8300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5900 2350
-NoConn ~ 5900 2450
-NoConn ~ 11500 2350
-NoConn ~ 11500 2450
 Text Notes 3200 10600 0    98   ~ 20
 Diff pairs length:\nMuxed1_clk = 79.193 + 47.282 = 126.475\nMuxed1_D0  = 45.339 + 74.459 = 126.475\nMuxed1_D1  = 83.195  + 43.28  = 126.475\nMuxed1_D2  = 30  + 96.475  =  126.475\nMuxed1_D3  = 26.7 + 79.356 = 126.475
 $Comp
@@ -259,15 +235,6 @@ F 3 "" H 14700 6450 50  0001 C CNN
 	1    14700 6450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 11500 6450
-NoConn ~ 11500 6550
-NoConn ~ 11500 6650
-NoConn ~ 5900 6750
-NoConn ~ 5900 6850
-NoConn ~ 5900 6950
-NoConn ~ 11500 6750
-NoConn ~ 11500 6850
-NoConn ~ 11500 6950
 NoConn ~ 11500 7250
 NoConn ~ 11500 7350
 NoConn ~ 11500 7650
@@ -303,8 +270,6 @@ NoConn ~ 9850 5450
 NoConn ~ 9850 5550
 NoConn ~ 9850 5650
 NoConn ~ 9850 5750
-NoConn ~ 9850 6450
-NoConn ~ 9850 6550
 Text Label 9150 5850 2    60   ~ 0
 I2C_CAM_CLK
 Text Label 9200 6000 2    60   ~ 0
@@ -333,10 +298,6 @@ NoConn ~ 11500 5250
 NoConn ~ 11500 5350
 NoConn ~ 11500 5450
 NoConn ~ 11500 5550
-NoConn ~ 11500 5650
-NoConn ~ 11500 5750
-NoConn ~ 11500 5850
-NoConn ~ 11500 5950
 Text Label 8900 4750 0    60   ~ 0
 DVDD_CAM_LV
 Text Label 11750 4750 0    60   ~ 0
@@ -1354,17 +1315,6 @@ Text Label 3000 4450 0    60   ~ 0
 CSI4_D1_P
 Text Label 3000 4550 0    60   ~ 0
 CSI4_D1_N
-$Comp
-L TX2_Symbols:QSH-060-01-L-D-A J1
-U 1 1 5A5122D0
-P 10400 5050
-F 0 "J1" H 10050 1850 45  0000 L BNN
-F 1 "QSH-060-01-L-D-A" H 10050 8200 45  0000 L BNN
-F 2 "TX2_Footprints:QSH-060-01-L-D-A" H 10080 8200 20  0001 C CNN
-F 3 "" H 10050 8050 60  0001 C CNN
-	1    10400 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11500 2950 12100 2950
 Wire Wire Line
@@ -1461,4 +1411,138 @@ Text Label 6800 4450 0    60   ~ 0
 CSI5_D1_P
 Text Label 6800 4550 0    60   ~ 0
 CSI5_D1_N
+Wire Wire Line
+	11500 6450 12100 6450
+Wire Wire Line
+	11500 6550 12100 6550
+Wire Wire Line
+	11500 6650 12100 6650
+Wire Wire Line
+	11500 6750 12100 6750
+Wire Wire Line
+	11500 6850 12100 6850
+Wire Wire Line
+	11500 6950 12100 6950
+Text Label 12100 6450 0    60   ~ 0
+CAM1_MCLK
+Text Label 12100 6550 0    60   ~ 0
+CAM1_PWDN
+Text Label 12100 6650 0    60   ~ 0
+CAM1_RST_L
+Text Label 12100 6750 0    60   ~ 0
+CAM2_MCLK
+Text Label 12100 6850 0    60   ~ 0
+CAM2_PWDN
+Text Label 12100 6950 0    60   ~ 0
+CAM2_RST
+$Comp
+L TX2_Symbols:QTH-060-01-L-D-A J2
+U 1 1 595ACB35
+P 4800 5050
+F 0 "J2" H 4450 1350 45  0000 L BNN
+F 1 "QTH-060-01-L-D-A" H 4450 8200 45  0000 L BNN
+F 2 "TX2_Footprints:QTH-060-01-L-D-A" H 4480 8200 20  0001 C CNN
+F 3 "" H 4450 8050 60  0001 C CNN
+	1    4800 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 6450 6500 6450
+Wire Wire Line
+	5900 6550 6500 6550
+Wire Wire Line
+	5900 6650 6500 6650
+Wire Wire Line
+	5900 6750 6500 6750
+Wire Wire Line
+	5900 6850 6500 6850
+Wire Wire Line
+	5900 6950 6500 6950
+Text Label 6500 6450 0    60   ~ 0
+CAM1_MCLK
+Text Label 6500 6550 0    60   ~ 0
+CAM1_PWDN
+Text Label 6500 6650 0    60   ~ 0
+CAM1_RST_L
+Text Label 6500 6750 0    60   ~ 0
+CAM2_MCLK
+Text Label 6500 6850 0    60   ~ 0
+CAM2_PWDN
+Text Label 6500 6950 0    60   ~ 0
+CAM2_RST
+Wire Wire Line
+	8700 6450 9850 6450
+Wire Wire Line
+	9850 6550 8700 6550
+Text Label 8700 6450 0    60   ~ 0
+CAM_I2C2_SCL
+Text Label 8700 6550 0    60   ~ 0
+CAM_I2C2_SDA
+Wire Wire Line
+	4250 6450 2700 6450
+Wire Wire Line
+	4250 6550 2700 6550
+Text Label 2700 6450 0    60   ~ 0
+CAM_I2C2_SCL
+Text Label 2700 6550 0    60   ~ 0
+CAM_I2C2_SDA
+Wire Wire Line
+	11500 2350 12150 2350
+Wire Wire Line
+	11500 2450 12150 2450
+Text Label 12150 2350 0    60   ~ 0
+CSI1_CLK_P
+Text Label 12150 2450 0    60   ~ 0
+CSI1_CLK_N
+Wire Wire Line
+	5900 2350 6800 2350
+Wire Wire Line
+	5900 2450 6800 2450
+Text Label 6800 2350 0    60   ~ 0
+CSI1_CLK_P
+Text Label 6800 2450 0    60   ~ 0
+CSI1_CLK_N
+$Comp
+L TX2_Symbols:QSH-060-01-L-D-A J1
+U 1 1 5A5122D0
+P 10400 5050
+F 0 "J1" H 10050 1850 45  0000 L BNN
+F 1 "QSH-060-01-L-D-A" H 10050 8200 45  0000 L BNN
+F 2 "TX2_Footprints:QSH-060-01-L-D-A" H 10080 8200 20  0001 C CNN
+F 3 "" H 10050 8050 60  0001 C CNN
+	1    10400 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 5650 12150 5650
+Wire Wire Line
+	11500 5750 12150 5750
+Wire Wire Line
+	11500 5850 12150 5850
+Wire Wire Line
+	11500 5950 12150 5950
+Text Label 12150 5650 0    60   ~ 0
+I2S3_CLK
+Text Label 12150 5750 0    60   ~ 0
+I2S3_LRCLK
+Text Label 12150 5850 0    60   ~ 0
+I2S3_SDIN
+Text Label 12150 5950 0    60   ~ 0
+I2S3_SDOUT
+Wire Wire Line
+	5900 5650 6500 5650
+Wire Wire Line
+	5900 5750 6500 5750
+Wire Wire Line
+	5900 5850 6500 5850
+Wire Wire Line
+	5900 5950 6500 5950
+Text Label 6500 5650 0    60   ~ 0
+I2S3_CLK
+Text Label 6500 5750 0    60   ~ 0
+I2S3_LRCLK
+Text Label 6500 5850 0    60   ~ 0
+I2S3_SDIN
+Text Label 6500 5950 0    60   ~ 0
+I2S3_SDOUT
 $EndSCHEMATC
