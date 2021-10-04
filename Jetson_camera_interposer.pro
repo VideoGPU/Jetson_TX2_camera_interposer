@@ -1,4 +1,4 @@
-update=10/02/21 11:43:12
+update=10/04/21 12:23:01
 version=1
 last_client=kicad
 [cvpcb]
@@ -248,10 +248,10 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=MIPI_DIFF
-Clearance=0.1524
+Clearance=0.2032
 TrackWidth=0.1016
-ViaDiameter=0.3556
-ViaDrill=0.2032
+ViaDiameter=0.9
+ViaDrill=0.7
 uViaDiameter=0.762
 uViaDrill=0.508
 dPairWidth=0.1016
