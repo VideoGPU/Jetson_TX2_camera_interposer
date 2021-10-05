@@ -1348,9 +1348,9 @@ Wire Wire Line
 Wire Wire Line
 	13350 7900 13850 7900
 Text Label 11850 7900 0    60   ~ 0
-VDD_SYS
+VDD_SYS_J
 Text Label 11850 8000 0    60   ~ 0
-VDD_IR
+VDD_IR_J
 Text Label 11850 8100 0    60   ~ 0
 VDD_3V3
 Text Label 11850 8200 0    60   ~ 0
@@ -1392,9 +1392,9 @@ $EndComp
 Wire Wire Line
 	13850 8800 13850 8950
 Text Label 13850 7900 0    60   ~ 0
-VDD_SYS_J
+VDD_SYS
 Text Label 13850 8000 0    60   ~ 0
-VDD_IR_J
+VDD_IR
 Text Label 13850 8100 0    60   ~ 0
 VDD_3V3_J
 Text Label 13850 8200 0    60   ~ 0
