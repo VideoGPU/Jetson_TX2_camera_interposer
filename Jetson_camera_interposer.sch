@@ -1308,10 +1308,6 @@ F 3 "~" H 13050 8300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12850 7900 11850 7900
-Wire Wire Line
-	12850 8000 11850 8000
-Wire Wire Line
 	12850 8100 11850 8100
 Wire Wire Line
 	12850 8200 11850 8200
@@ -1343,13 +1339,9 @@ Wire Wire Line
 	13350 8200 13850 8200
 Wire Wire Line
 	13350 8100 13850 8100
-Wire Wire Line
-	13350 8000 13850 8000
-Wire Wire Line
-	13350 7900 13850 7900
-Text Label 11850 7900 0    60   ~ 0
+Text Label 13850 7900 0    60   ~ 0
 VDD_SYS_J
-Text Label 11850 8000 0    60   ~ 0
+Text Label 13850 8000 0    60   ~ 0
 VDD_IR_J
 Text Label 11850 8100 0    60   ~ 0
 VDD_3V3
@@ -1391,9 +1383,9 @@ F 3 "" H 13850 8950 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	13850 8800 13850 8950
-Text Label 13850 7900 0    60   ~ 0
+Text Label 11850 7900 0    60   ~ 0
 VDD_SYS
-Text Label 13850 8000 0    60   ~ 0
+Text Label 11850 8000 0    60   ~ 0
 VDD_IR
 Text Label 13850 8100 0    60   ~ 0
 VDD_3V3_J
@@ -1413,57 +1405,47 @@ Wire Wire Line
 	9800 7200 10200 7200
 Wire Wire Line
 	9800 7700 10200 7700
-Text Label 12650 2800 2    60   ~ 0
+Text Label 14750 4800 2    60   ~ 0
 I2C_CAM_CLK
-Text Label 12650 2950 2    60   ~ 0
+Text Label 14750 4700 2    60   ~ 0
 I2C_CAM_DAT
-Text Label 15350 5500 2    60   ~ 0
+Text Label 15650 1500 2    60   ~ 0
 CAM_AF_PWDN
-Text Label 12100 3150 0    60   ~ 0
-CAM_I2C2_SCL
-Text Label 12100 3300 0    60   ~ 0
-CAM_I2C2_SDA
-Text Label 12650 3950 2    60   ~ 0
+Text Label 14700 4200 2    60   ~ 0
 CAM0_MCLK
-Text Label 12600 4450 2    60   ~ 0
+Text Label 14850 6100 2    60   ~ 0
 CAM0_PWR
-Text Label 15350 5600 2    60   ~ 0
+Text Label 15650 1600 2    60   ~ 0
 CAM_FLASH_EN
-Text Label 12900 3600 2    60   ~ 0
-I2C_GP0_CLK_1V8
-Text Label 12900 3700 2    60   ~ 0
-I2C_GP0_DAT_1V8
-Text Label 14800 5700 0    60   ~ 0
+Text Label 15100 1700 0    60   ~ 0
 IR_READY
-Text Label 14750 5800 0    60   ~ 0
+Text Label 15050 1800 0    60   ~ 0
 IR_TRIGGER
-Text Label 14750 5950 0    60   ~ 0
+Text Label 15050 1950 0    60   ~ 0
 CAM_INTR
-Text Label 14750 6100 0    60   ~ 0
+Text Label 15050 2100 0    60   ~ 0
 VSYS_EN
-Text Label 14750 6750 0    60   ~ 0
+Text Label 15050 2750 0    60   ~ 0
 I2S3_CLK
-Text Label 14800 6900 0    60   ~ 0
+Text Label 15100 2900 0    60   ~ 0
 I2S3_LRCLK
-Text Label 14800 7000 0    60   ~ 0
+Text Label 15100 3000 0    60   ~ 0
 I2S3_SDIN
-Text Label 14800 7100 0    60   ~ 0
+Text Label 15100 3100 0    60   ~ 0
 I2S3_SDOUT
-Text Label 14750 6250 0    60   ~ 0
+Text Label 15050 2250 0    60   ~ 0
 CAM_VSYNC
-Text Label 12150 4050 0    60   ~ 0
+Text Label 14200 4000 0    60   ~ 0
 CAM1_MCLK
-Text Label 12100 4600 0    60   ~ 0
+Text Label 14400 6200 0    60   ~ 0
 CAM1_PWDN
-Text Label 12100 5250 0    60   ~ 0
-CAM1_RST_L
-Text Label 12150 4150 0    60   ~ 0
+Text Label 14200 3800 0    60   ~ 0
 CAM2_MCLK
-Text Label 12100 4750 0    60   ~ 0
+Text Label 14400 6300 0    60   ~ 0
 CAM2_PWDN
-Text Label 12100 5400 0    60   ~ 0
+Text Label 14250 3700 0    60   ~ 0
 CAM2_RST
-Text Label 12500 5100 2    60   ~ 0
+Text Label 14600 4100 2    60   ~ 0
 CAM0_RST
 $Comp
 L Connector_Generic:Conn_02x12_Odd_Even J8
@@ -1476,4 +1458,57 @@ F 3 "~" H 13750 4200 50  0001 C CNN
 	1    13750 4200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	12850 7900 11850 7900
+Wire Wire Line
+	12850 8000 11850 8000
+Wire Wire Line
+	13350 7900 13850 7900
+Wire Wire Line
+	13350 8000 13850 8000
+Text Label 14200 3900 0    60   ~ 0
+CAM1_RST_L
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J9
+U 1 1 61A4E08F
+P 13800 6600
+F 0 "J9" H 13850 7317 50  0000 C CNN
+F 1 "Conn_02x30_Odd_Even" H 13850 7226 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06_Pitch2.54mm" H 13800 6600 50  0001 C CNN
+F 3 "~" H 13800 6600 50  0001 C CNN
+	1    13800 6600
+	1    0    0    -1  
+$EndComp
+Text Label 14950 4300 2    60   ~ 0
+I2C_GP0_DAT_1V8
+Text Label 15000 4400 2    60   ~ 0
+I2C_GP0_CLK_1V8
+Text Label 14200 4600 0    60   ~ 0
+CAM_I2C2_SCL
+Text Label 14200 4500 0    60   ~ 0
+CAM_I2C2_SDA
+Wire Wire Line
+	14050 3900 14200 3900
+Wire Wire Line
+	14050 4000 14200 4000
+Wire Wire Line
+	14050 4300 14950 4300
+Wire Wire Line
+	14050 4400 15000 4400
+Wire Wire Line
+	14050 4500 14200 4500
+Wire Wire Line
+	14050 4600 14200 4600
+Wire Wire Line
+	14050 4700 14750 4700
+Wire Wire Line
+	14050 4800 14750 4800
+Wire Wire Line
+	14050 3700 14250 3700
+Wire Wire Line
+	14050 3800 14200 3800
+Wire Wire Line
+	14050 4100 14600 4100
+Wire Wire Line
+	14050 4200 14700 4200
 $EndSCHEMATC
