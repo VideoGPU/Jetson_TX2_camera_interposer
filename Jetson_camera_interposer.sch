@@ -1302,15 +1302,11 @@ U 1 1 615E8738
 P 13050 8300
 F 0 "J7" H 13100 8917 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 13100 8826 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 13050 8300 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm_SMD" H 13050 8300 50  0001 C CNN
 F 3 "~" H 13050 8300 50  0001 C CNN
 	1    13050 8300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12850 7900 11850 7900
-Wire Wire Line
-	12850 8000 11850 8000
 Wire Wire Line
 	12850 8100 11850 8100
 Wire Wire Line
@@ -1343,13 +1339,9 @@ Wire Wire Line
 	13350 8200 13850 8200
 Wire Wire Line
 	13350 8100 13850 8100
-Wire Wire Line
-	13350 8000 13850 8000
-Wire Wire Line
-	13350 7900 13850 7900
-Text Label 11850 7900 0    60   ~ 0
+Text Label 13850 7900 0    60   ~ 0
 VDD_SYS_J
-Text Label 11850 8000 0    60   ~ 0
+Text Label 13850 8000 0    60   ~ 0
 VDD_IR_J
 Text Label 11850 8100 0    60   ~ 0
 VDD_3V3
@@ -1391,9 +1383,9 @@ F 3 "" H 13850 8950 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	13850 8800 13850 8950
-Text Label 13850 7900 0    60   ~ 0
+Text Label 11850 7900 0    60   ~ 0
 VDD_SYS
-Text Label 13850 8000 0    60   ~ 0
+Text Label 11850 8000 0    60   ~ 0
 VDD_IR
 Text Label 13850 8100 0    60   ~ 0
 VDD_3V3_J
@@ -1471,9 +1463,17 @@ U 1 1 6174E2F6
 P 13750 4200
 F 0 "J8" H 13800 4917 50  0000 C CNN
 F 1 "Conn_02x30_Odd_Even" H 13800 4826 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x12_Pitch2.54mm" H 13750 4200 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x12_Pitch2.54mm_SMD" H 13750 4200 50  0001 C CNN
 F 3 "~" H 13750 4200 50  0001 C CNN
 	1    13750 4200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	12850 7900 11850 7900
+Wire Wire Line
+	12850 8000 11850 8000
+Wire Wire Line
+	13350 7900 13850 7900
+Wire Wire Line
+	13350 8000 13850 8000
 $EndSCHEMATC
