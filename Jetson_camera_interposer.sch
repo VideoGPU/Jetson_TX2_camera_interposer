@@ -1413,4 +1413,67 @@ Wire Wire Line
 	9800 7200 10200 7200
 Wire Wire Line
 	9800 7700 10200 7700
+Text Label 12650 2800 2    60   ~ 0
+I2C_CAM_CLK
+Text Label 12650 2950 2    60   ~ 0
+I2C_CAM_DAT
+Text Label 15350 5500 2    60   ~ 0
+CAM_AF_PWDN
+Text Label 12100 3150 0    60   ~ 0
+CAM_I2C2_SCL
+Text Label 12100 3300 0    60   ~ 0
+CAM_I2C2_SDA
+Text Label 12650 3950 2    60   ~ 0
+CAM0_MCLK
+Text Label 12600 4450 2    60   ~ 0
+CAM0_PWR
+Text Label 15350 5600 2    60   ~ 0
+CAM_FLASH_EN
+Text Label 12900 3600 2    60   ~ 0
+I2C_GP0_CLK_1V8
+Text Label 12900 3700 2    60   ~ 0
+I2C_GP0_DAT_1V8
+Text Label 14800 5700 0    60   ~ 0
+IR_READY
+Text Label 14750 5800 0    60   ~ 0
+IR_TRIGGER
+Text Label 14750 5950 0    60   ~ 0
+CAM_INTR
+Text Label 14750 6100 0    60   ~ 0
+VSYS_EN
+Text Label 14750 6750 0    60   ~ 0
+I2S3_CLK
+Text Label 14800 6900 0    60   ~ 0
+I2S3_LRCLK
+Text Label 14800 7000 0    60   ~ 0
+I2S3_SDIN
+Text Label 14800 7100 0    60   ~ 0
+I2S3_SDOUT
+Text Label 14750 6250 0    60   ~ 0
+CAM_VSYNC
+Text Label 12150 4050 0    60   ~ 0
+CAM1_MCLK
+Text Label 12100 4600 0    60   ~ 0
+CAM1_PWDN
+Text Label 12100 5250 0    60   ~ 0
+CAM1_RST_L
+Text Label 12150 4150 0    60   ~ 0
+CAM2_MCLK
+Text Label 12100 4750 0    60   ~ 0
+CAM2_PWDN
+Text Label 12100 5400 0    60   ~ 0
+CAM2_RST
+Text Label 12500 5100 2    60   ~ 0
+CAM0_RST
+$Comp
+L Connector_Generic:Conn_02x12_Odd_Even J8
+U 1 1 6174E2F6
+P 13750 4200
+F 0 "J8" H 13800 4917 50  0000 C CNN
+F 1 "Conn_02x30_Odd_Even" H 13800 4826 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x12_Pitch2.54mm" H 13750 4200 50  0001 C CNN
+F 3 "~" H 13750 4200 50  0001 C CNN
+	1    13750 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
