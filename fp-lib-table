@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name TX2_Footprints)(type KiCad)(uri ${KIPRJMOD}/Jetson_camera_interposer.pretty)(options "")(descr desc_TX2_Footprints))
-)

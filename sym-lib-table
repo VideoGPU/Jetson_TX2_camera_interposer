@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name TX2_Symbols)(type Legacy)(uri ${KIPRJMOD}/jetson_tx2_camera_interposer.lib)(options "")(descr desc_TX2_Symbols))
-)
