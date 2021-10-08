@@ -28,7 +28,7 @@ CAM0_MCLK
 Text Label 1650 6500 2    60   ~ 0
 CAM0_PWR
 Text Label 1500 6600 2    60   ~ 0
-CAM0_RST
+CAM0_RST_J
 Text Label 1500 6700 2    60   ~ 0
 CAM_FLASH_EN
 Text Label 4850 6100 2    60   ~ 0
@@ -271,23 +271,23 @@ NoConn ~ 8100 5300
 NoConn ~ 8100 5400
 NoConn ~ 8100 5500
 Text Label 7400 5600 2    60   ~ 0
-I2C_CAM_CLK
+I2C_CAM_CLK_J
 Text Label 7450 5750 2    60   ~ 0
-I2C_CAM_DAT
+I2C_CAM_DAT_J
 Text Label 7350 6400 2    60   ~ 0
-CAM0_MCLK
+CAM0_MCLK_J
 Text Label 7300 6500 2    60   ~ 0
 CAM0_PWR
 Text Label 7250 6600 2    60   ~ 0
-CAM0_RST
+CAM0_RST_J
 Text Label 7450 6700 2    60   ~ 0
 CAM_FLASH_EN
 Text Label 7400 6900 2    60   ~ 0
 JETSON_1V2_J
 Text Label 7500 7100 2    60   ~ 0
-I2C_GP0_CLK_1V8
+I2C_GP0_CLK_1V8_J
 Text Label 7300 7200 2    60   ~ 0
-I2C_GP0_DAT_1V8
+I2C_GP0_DAT_1V8_J
 Text Label 10750 6100 0    60   ~ 0
 CAM_VSYNC
 Text Label 11200 6900 0    60   ~ 0
@@ -1175,17 +1175,17 @@ Wire Wire Line
 Wire Wire Line
 	9750 6700 10350 6700
 Text Label 10350 6200 0    60   ~ 0
-CAM1_MCLK
+CAM1_MCLK_J
 Text Label 10350 6300 0    60   ~ 0
 CAM1_PWDN
 Text Label 10350 6400 0    60   ~ 0
-CAM1_RST_L
+CAM1_RST_L_J
 Text Label 10350 6500 0    60   ~ 0
-CAM2_MCLK
+CAM2_MCLK_J
 Text Label 10350 6600 0    60   ~ 0
 CAM2_PWDN
 Text Label 10350 6700 0    60   ~ 0
-CAM2_RST
+CAM2_RST_J
 $Comp
 L TX2_Symbols:QTH-060-01-L-D-A J2
 U 1 1 595ACB35
@@ -1226,9 +1226,9 @@ Wire Wire Line
 Wire Wire Line
 	8100 6300 6950 6300
 Text Label 6950 6200 0    60   ~ 0
-CAM_I2C2_SCL
+CAM_I2C2_SCL_J
 Text Label 6950 6300 0    60   ~ 0
-CAM_I2C2_SDA
+CAM_I2C2_SDA_J
 Wire Wire Line
 	2500 6200 950  6200
 Wire Wire Line
@@ -1413,7 +1413,7 @@ Text Label 15650 1500 2    60   ~ 0
 CAM_AF_PWDN
 Text Label 14700 4200 2    60   ~ 0
 CAM0_MCLK
-Text Label 14850 6100 2    60   ~ 0
+Text Label 14700 6450 2    60   ~ 0
 CAM0_PWR
 Text Label 15650 1600 2    60   ~ 0
 CAM_FLASH_EN
@@ -1437,12 +1437,8 @@ Text Label 15050 2250 0    60   ~ 0
 CAM_VSYNC
 Text Label 14200 4000 0    60   ~ 0
 CAM1_MCLK
-Text Label 14400 6200 0    60   ~ 0
-CAM1_PWDN
 Text Label 14200 3800 0    60   ~ 0
 CAM2_MCLK
-Text Label 14400 6300 0    60   ~ 0
-CAM2_PWDN
 Text Label 14250 3700 0    60   ~ 0
 CAM2_RST
 Text Label 14600 4100 2    60   ~ 0
@@ -1511,4 +1507,56 @@ Wire Wire Line
 	14050 4100 14600 4100
 Wire Wire Line
 	14050 4200 14700 4200
+Text Label 12750 3700 0    60   ~ 0
+CAM2_RST_J
+Text Label 12650 3800 0    60   ~ 0
+CAM2_MCLK_J
+Text Label 12650 3900 0    60   ~ 0
+CAM1_RST_L_J
+Text Label 12650 4000 0    60   ~ 0
+CAM1_MCLK_J
+Text Label 13250 4100 2    60   ~ 0
+CAM0_RST_J
+Text Label 13250 4200 2    60   ~ 0
+CAM0_MCLK_J
+Text Label 13250 4300 2    60   ~ 0
+I2C_GP0_DAT_1V8_J
+Text Label 13250 4400 2    60   ~ 0
+I2C_GP0_CLK_1V8_J
+Text Label 12500 4500 0    60   ~ 0
+CAM_I2C2_SDA_J
+Text Label 12500 4600 0    60   ~ 0
+CAM_I2C2_SCL_J
+Text Label 13250 4700 2    60   ~ 0
+I2C_CAM_DAT_J
+Text Label 13250 4800 2    60   ~ 0
+I2C_CAM_CLK_J
+Wire Wire Line
+	13550 3700 12750 3700
+Wire Wire Line
+	13550 3800 12650 3800
+Wire Wire Line
+	13550 3900 12650 3900
+Wire Wire Line
+	13550 4000 12650 4000
+Wire Wire Line
+	13550 4100 13250 4100
+Wire Wire Line
+	13250 4200 13550 4200
+Wire Wire Line
+	13550 4300 13250 4300
+Wire Wire Line
+	13550 4400 13250 4400
+Wire Wire Line
+	13550 4500 12500 4500
+Wire Wire Line
+	13550 4600 12500 4600
+Wire Wire Line
+	13550 4700 13250 4700
+Wire Wire Line
+	13250 4800 13550 4800
+Text Label 14250 6650 0    60   ~ 0
+CAM2_PWDN
+Text Label 14250 6550 0    60   ~ 0
+CAM1_PWDN
 $EndSCHEMATC
