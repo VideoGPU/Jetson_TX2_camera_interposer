@@ -1294,49 +1294,6 @@ Text Label 4750 5600 0    60   ~ 0
 I2S3_SDIN
 Text Label 4750 5700 0    60   ~ 0
 I2S3_SDOUT
-$Comp
-L Connector_Generic:Conn_02x10_Odd_Even J7
-U 1 1 615E8738
-P 13050 8300
-F 0 "J7" H 13100 8917 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 13100 8826 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 13050 8300 50  0001 C CNN
-F 3 "~" H 13050 8300 50  0001 C CNN
-	1    13050 8300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12850 8100 11850 8100
-Wire Wire Line
-	12850 8200 11850 8200
-Wire Wire Line
-	12850 8300 11850 8300
-Wire Wire Line
-	12850 8400 11850 8400
-Wire Wire Line
-	12850 8500 11850 8500
-Wire Wire Line
-	12850 8600 11850 8600
-Wire Wire Line
-	12850 8700 11850 8700
-Wire Wire Line
-	12850 8800 12350 8800
-Wire Wire Line
-	13350 8800 13850 8800
-Wire Wire Line
-	13350 8700 13850 8700
-Wire Wire Line
-	13350 8600 13850 8600
-Wire Wire Line
-	13350 8500 13850 8500
-Wire Wire Line
-	13350 8400 13850 8400
-Wire Wire Line
-	13350 8300 13850 8300
-Wire Wire Line
-	13350 8200 13850 8200
-Wire Wire Line
-	13350 8100 13850 8100
 Text Label 13850 7900 0    60   ~ 0
 VDD_SYS_J
 Text Label 13850 8000 0    60   ~ 0
@@ -1355,32 +1312,6 @@ Text Label 11850 8600 0    60   ~ 0
 VDD_CAM_FQ_HV_CAM
 Text Label 11850 8700 0    60   ~ 0
 DVDD_CAM_LV
-$Comp
-L power:Earth #PWR0101
-U 1 1 61B5BBC6
-P 12350 8950
-F 0 "#PWR0101" H 12350 8700 50  0001 C CNN
-F 1 "Earth" H 12350 8800 50  0001 C CNN
-F 2 "" H 12350 8950 50  0000 C CNN
-F 3 "" H 12350 8950 50  0000 C CNN
-	1    12350 8950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12350 8800 12350 8950
-$Comp
-L power:Earth #PWR0102
-U 1 1 61B84369
-P 13850 8950
-F 0 "#PWR0102" H 13850 8700 50  0001 C CNN
-F 1 "Earth" H 13850 8800 50  0001 C CNN
-F 2 "" H 13850 8950 50  0000 C CNN
-F 3 "" H 13850 8950 50  0000 C CNN
-	1    13850 8950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13850 8800 13850 8950
 Text Label 11850 7900 0    60   ~ 0
 VDD_SYS
 Text Label 11850 8000 0    60   ~ 0
@@ -1411,18 +1342,12 @@ Text Label 15650 1500 2    60   ~ 0
 CAM_AF_PWDN
 Text Label 14700 4200 2    60   ~ 0
 CAM0_MCLK
-Text Label 14650 6400 2    60   ~ 0
-CAM0_PWR
 Text Label 15650 1600 2    60   ~ 0
 CAM_FLASH_EN
 Text Label 15100 1700 0    60   ~ 0
 IR_READY
 Text Label 15050 1800 0    60   ~ 0
 IR_TRIGGER
-Text Label 14200 6700 0    60   ~ 0
-CAM_INTR
-Text Label 14200 6800 0    60   ~ 0
-VSYS_EN
 Text Label 15050 2750 0    60   ~ 0
 I2S3_CLK
 Text Label 15100 2900 0    60   ~ 0
@@ -1431,8 +1356,6 @@ Text Label 15100 3000 0    60   ~ 0
 I2S3_SDIN
 Text Label 15100 3100 0    60   ~ 0
 I2S3_SDOUT
-Text Label 14200 6900 0    60   ~ 0
-CAM_VSYNC
 Text Label 14200 4000 0    60   ~ 0
 CAM1_MCLK
 Text Label 14200 3800 0    60   ~ 0
@@ -1452,27 +1375,8 @@ F 3 "~" H 13750 4200 50  0001 C CNN
 	1    13750 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12850 7900 11850 7900
-Wire Wire Line
-	12850 8000 11850 8000
-Wire Wire Line
-	13350 7900 13850 7900
-Wire Wire Line
-	13350 8000 13850 8000
 Text Label 14200 3900 0    60   ~ 0
 CAM1_RST_L
-$Comp
-L Connector_Generic:Conn_02x06_Odd_Even J9
-U 1 1 61A4E08F
-P 13800 6600
-F 0 "J9" H 13850 7050 50  0000 C CNN
-F 1 "Conn_02x30_Odd_Even" H 13850 6950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x06_Pitch2.54mm" H 13800 6600 50  0001 C CNN
-F 3 "~" H 13800 6600 50  0001 C CNN
-	1    13800 6600
-	1    0    0    -1  
-$EndComp
 Text Label 14950 4300 2    60   ~ 0
 I2C_GP0_DAT_1V8
 Text Label 15000 4400 2    60   ~ 0
@@ -1553,48 +1457,62 @@ Wire Wire Line
 	13550 4700 13250 4700
 Wire Wire Line
 	13250 4800 13550 4800
-Text Label 14200 6600 0    60   ~ 0
-CAM2_PWDN
-Text Label 14200 6500 0    60   ~ 0
-CAM1_PWDN
-Wire Wire Line
-	14100 6400 14650 6400
-Wire Wire Line
-	14100 6500 14200 6500
-Wire Wire Line
-	14100 6600 14200 6600
-Wire Wire Line
-	14100 6700 14200 6700
-Wire Wire Line
-	14100 6800 14200 6800
-Wire Wire Line
-	14100 6900 14200 6900
-Text Label 13300 6400 2    60   ~ 0
-CAM0_PWR_J
-Text Label 12800 6500 0    60   ~ 0
-CAM1_PWDN_J
-Text Label 12800 6600 0    60   ~ 0
-CAM2_PWDN_J
-Text Label 12900 6700 0    60   ~ 0
-CAM_INTR_J
-Text Label 12950 6800 0    60   ~ 0
-VSYS_EN_J
-Text Label 12850 6900 0    60   ~ 0
-CAM_VSYNC_J
-Wire Wire Line
-	13300 6400 13600 6400
-Wire Wire Line
-	12800 6500 13600 6500
-Wire Wire Line
-	12800 6600 13600 6600
-Wire Wire Line
-	12900 6700 13600 6700
-Wire Wire Line
-	12950 6800 13600 6800
 Text Label 4850 6100 2    60   ~ 0
 CAM_VSYNC
-Wire Wire Line
-	12850 6900 13600 6900
 Text Notes 12450 3450 0    60   Italic 12
 VERY BAD LOCATION, FMC DOESN'T FIT. MOVE IT!!!
+Text Label 12850 6900 0    60   ~ 0
+CAM_VSYNC_J
+Text Label 12950 6800 0    60   ~ 0
+VSYS_EN_J
+Text Label 12900 6700 0    60   ~ 0
+CAM_INTR_J
+Text Label 12800 6600 0    60   ~ 0
+CAM2_PWDN_J
+Text Label 12800 6500 0    60   ~ 0
+CAM1_PWDN_J
+Text Label 13300 6400 2    60   ~ 0
+CAM0_PWR_J
+Text Label 14200 6500 0    60   ~ 0
+CAM1_PWDN
+Text Label 14200 6600 0    60   ~ 0
+CAM2_PWDN
+Text Label 14200 6900 0    60   ~ 0
+CAM_VSYNC
+Text Label 14200 6800 0    60   ~ 0
+VSYS_EN
+Text Label 14200 6700 0    60   ~ 0
+CAM_INTR
+Text Label 14650 6400 2    60   ~ 0
+CAM0_PWR
+Wire Wire Line
+	11850 7900 13850 7900
+Wire Wire Line
+	11850 8000 13850 8000
+Wire Wire Line
+	11850 8100 13850 8100
+Wire Wire Line
+	11850 8200 13850 8200
+Wire Wire Line
+	11850 8300 13850 8300
+Wire Wire Line
+	11850 8400 13850 8400
+Wire Wire Line
+	11850 8500 13850 8500
+Wire Wire Line
+	11850 8600 13850 8600
+Wire Wire Line
+	11850 8700 13850 8700
+Wire Wire Line
+	13300 6400 14650 6400
+Wire Wire Line
+	12800 6500 14200 6500
+Wire Wire Line
+	12800 6600 14200 6600
+Wire Wire Line
+	12900 6700 14200 6700
+Wire Wire Line
+	12950 6800 14200 6800
+Wire Wire Line
+	12850 6900 14200 6900
 $EndSCHEMATC
