@@ -122,117 +122,29 @@ CSI0_D1_N
 $Comp
 L TX2_Symbols:Conn_01x01 J3
 U 1 1 5A60149C
-P 19750 4950
-F 0 "J3" H 19750 5050 50  0000 C CNN
-F 1 "Conn_01x01" H 19750 4850 50  0001 C CNN
-F 2 "TX2_Footprints:ground_probe" H 19750 4950 50  0001 C CNN
-F 3 "" H 19750 4950 50  0001 C CNN
-	1    19750 4950
+P 11850 7800
+F 0 "J3" H 11850 7900 50  0000 C CNN
+F 1 "Conn_01x01" H 11850 7700 50  0001 C CNN
+F 2 "TX2_Footprints:ground_probe" H 11850 7800 50  0001 C CNN
+F 3 "" H 11850 7800 50  0001 C CNN
+	1    11850 7800
 	1    0    0    -1  
 $EndComp
-Text Notes 19550 4750 0    60   ~ 0
+Text Notes 11400 7550 0    60   ~ 0
 Ground pads
-$Comp
-L TX2_Symbols:Conn_01x01 J4
-U 1 1 5A6017BC
-P 19750 5250
-F 0 "J4" H 19750 5350 50  0000 C CNN
-F 1 "Conn_01x01" H 19750 5150 50  0001 C CNN
-F 2 "TX2_Footprints:ground_probe" H 19750 5250 50  0001 C CNN
-F 3 "" H 19750 5250 50  0001 C CNN
-	1    19750 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L TX2_Symbols:Conn_01x01 J5
-U 1 1 5A60182E
-P 19750 5550
-F 0 "J5" H 19750 5650 50  0000 C CNN
-F 1 "Conn_01x01" H 19750 5450 50  0001 C CNN
-F 2 "TX2_Footprints:ground_probe" H 19750 5550 50  0001 C CNN
-F 3 "" H 19750 5550 50  0001 C CNN
-	1    19750 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L TX2_Symbols:Conn_01x01 J6
-U 1 1 5A60188B
-P 19750 5850
-F 0 "J6" H 19750 5950 50  0000 C CNN
-F 1 "Conn_01x01" H 19750 5750 50  0001 C CNN
-F 2 "TX2_Footprints:ground_probe" H 19750 5850 50  0001 C CNN
-F 3 "" H 19750 5850 50  0001 C CNN
-	1    19750 5850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:Earth #PWR05
 U 1 1 5A601ACB
-P 19350 9300
-F 0 "#PWR05" H 19350 9050 50  0001 C CNN
-F 1 "Earth" H 19350 9150 50  0001 C CNN
-F 2 "" H 19350 9300 50  0000 C CNN
-F 3 "" H 19350 9300 50  0000 C CNN
-	1    19350 9300
+P 11450 8800
+F 0 "#PWR05" H 11450 8550 50  0001 C CNN
+F 1 "Earth" H 11450 8650 50  0001 C CNN
+F 2 "" H 11450 8800 50  0000 C CNN
+F 3 "" H 11450 8800 50  0000 C CNN
+	1    11450 8800
 	1    0    0    -1  
 $EndComp
 Text Notes 3200 10600 0    98   ~ 20
 Diff pairs length:\nMuxed1_clk = 79.193 + 47.282 = 126.475\nMuxed1_D0  = 45.339 + 74.459 = 126.475\nMuxed1_D1  = 83.195  + 43.28  = 126.475\nMuxed1_D2  = 30  + 96.475  =  126.475\nMuxed1_D3  = 26.7 + 79.356 = 126.475
-$Comp
-L TX2_Symbols:Conn_01x01 J21
-U 1 1 5B81DBAD
-P 19750 6150
-F 0 "J21" H 19750 6250 50  0000 C CNN
-F 1 "Conn_01x01" H 19750 6050 50  0001 C CNN
-F 2 "TX2_Footprints:ground_probe" H 19750 6150 50  0001 C CNN
-F 3 "" H 19750 6150 50  0001 C CNN
-	1    19750 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L TX2_Symbols:Conn_01x01 J23
-U 1 1 5B81DC55
-P 19750 6850
-F 0 "J23" H 19750 6950 50  0000 C CNN
-F 1 "Conn_01x01" H 19750 6750 50  0000 C CNN
-F 2 "TX2_Footprints:ground_probe" H 19750 6850 50  0001 C CNN
-F 3 "" H 19750 6850 50  0001 C CNN
-	1    19750 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L TX2_Symbols:Conn_01x01 J22
-U 1 1 5B81DCCB
-P 19750 6500
-F 0 "J22" H 19750 6600 50  0000 C CNN
-F 1 "Conn_01x01" H 19750 6400 50  0001 C CNN
-F 2 "TX2_Footprints:ground_probe" H 19750 6500 50  0001 C CNN
-F 3 "" H 19750 6500 50  0001 C CNN
-	1    19750 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L TX2_Symbols:Conn_01x01 J24
-U 1 1 5B81DDD9
-P 19750 7150
-F 0 "J24" H 19750 7250 50  0000 C CNN
-F 1 "Conn_01x01" H 19750 7050 50  0000 C CNN
-F 2 "TX2_Footprints:ground_probe" H 19750 7150 50  0001 C CNN
-F 3 "" H 19750 7150 50  0001 C CNN
-	1    19750 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L TX2_Symbols:Conn_01x01 J25
-U 1 1 5B81DE5D
-P 19750 7450
-F 0 "J25" H 19750 7550 50  0000 C CNN
-F 1 "Conn_01x01" H 19750 7350 50  0000 C CNN
-F 2 "TX2_Footprints:ground_probe" H 19750 7450 50  0001 C CNN
-F 3 "" H 19750 7450 50  0001 C CNN
-	1    19750 7450
-	1    0    0    -1  
-$EndComp
 NoConn ~ 9750 7000
 NoConn ~ 9750 7100
 NoConn ~ 9750 7400
@@ -317,9 +229,9 @@ IR_READY
 Text Label 7100 7500 0    60   ~ 0
 IR_TRIGGER
 Text Label 7200 7700 0    60   ~ 0
-CAM_INTR_J
+CAM_INTR
 Text Label 7250 7800 0    60   ~ 0
-VSYS_EN_J
+VSYS_EN
 Text Label 2250 7300 2    60   ~ 0
 VDD_IR
 Text Label 2250 7400 2    60   ~ 0
@@ -334,8 +246,6 @@ Text Label 2200 6100 2    60   ~ 0
 CAM_AF_PWDN
 Text Label 7650 6100 2    60   ~ 0
 CAM_AF_PWDN
-Wire Wire Line
-	9750 6900 10900 6900
 Wire Wire Line
 	9750 6100 11350 6100
 Wire Wire Line
@@ -400,37 +310,11 @@ Wire Wire Line
 	7850 6800 8100 6800
 Wire Wire Line
 	9900 6800 9750 6800
-Connection ~ 19350 7750
+Connection ~ 11450 8200
 Wire Wire Line
-	19350 7750 19550 7750
-Connection ~ 19350 7450
+	11450 8200 11650 8200
 Wire Wire Line
-	19350 7450 19550 7450
-Connection ~ 19350 7150
-Wire Wire Line
-	19350 7150 19550 7150
-Connection ~ 19350 6850
-Wire Wire Line
-	19350 6850 19550 6850
-Connection ~ 19350 6500
-Wire Wire Line
-	19350 6500 19550 6500
-Connection ~ 19350 6150
-Wire Wire Line
-	19350 6150 19550 6150
-Wire Wire Line
-	19350 4950 19350 5250
-Connection ~ 19350 5850
-Wire Wire Line
-	19350 5850 19550 5850
-Connection ~ 19350 5550
-Wire Wire Line
-	19350 5550 19550 5550
-Connection ~ 19350 5250
-Wire Wire Line
-	19550 5250 19350 5250
-Wire Wire Line
-	19550 4950 19350 4950
+	11650 7800 11450 7800
 Wire Wire Line
 	8100 2500 7050 2500
 Wire Wire Line
@@ -718,11 +602,6 @@ Wire Wire Line
 	2500 6100 2200 6100
 Wire Wire Line
 	6850 6100 8100 6100
-Wire Wire Line
-	10900 6900 10900 7150
-Wire Wire Line
-	10900 7150 11000 7150
-Connection ~ 10900 6900
 $Comp
 L TX2_Symbols:TEST_1P I2C_DAT2
 U 1 1 5BA2560B
@@ -746,17 +625,8 @@ F 3 "" H 6200 7100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	19600 8100 19350 8100
-Connection ~ 19350 8100
-Wire Wire Line
-	19600 8300 19350 8300
-Connection ~ 19350 8300
-Wire Wire Line
-	19600 8550 19350 8550
-Connection ~ 19350 8550
-Wire Wire Line
-	19600 8750 19350 8750
-Connection ~ 19350 8750
+	11750 8500 11450 8500
+Connection ~ 11450 8500
 Wire Wire Line
 	7850 5800 7850 6800
 Wire Wire Line
@@ -781,24 +651,6 @@ Wire Wire Line
 	9900 6800 9900 7600
 Wire Wire Line
 	7850 6800 7850 7600
-Wire Wire Line
-	19350 7750 19350 8100
-Wire Wire Line
-	19350 7450 19350 7750
-Wire Wire Line
-	19350 7150 19350 7450
-Wire Wire Line
-	19350 6850 19350 7150
-Wire Wire Line
-	19350 6500 19350 6850
-Wire Wire Line
-	19350 6150 19350 6500
-Wire Wire Line
-	19350 5850 19350 6150
-Wire Wire Line
-	19350 5550 19350 5850
-Wire Wire Line
-	19350 5250 19350 5550
 Wire Wire Line
 	7850 4400 7850 5800
 Wire Wire Line
@@ -886,68 +738,27 @@ Wire Wire Line
 Wire Wire Line
 	8000 5900 8100 5900
 Wire Wire Line
-	10900 6900 11200 6900
-Wire Wire Line
-	19350 8100 19350 8300
-Wire Wire Line
-	19350 8300 19350 8550
-Wire Wire Line
-	19350 8550 19350 8750
-Wire Wire Line
-	19350 8750 19350 9300
+	11450 8500 11450 8800
 $Comp
 L TX2_Symbols:TEST_1P GND4
 U 1 1 5BA2777D
-P 19600 8750
-F 0 "GND4" V 19600 9050 50  0000 C CNN
-F 1 "TestP" V 19700 8900 50  0001 C CNN
-F 2 "TX2_Footprints:test_point" H 19800 8750 50  0001 C CNN
-F 3 "" H 19800 8750 50  0001 C CNN
-	1    19600 8750
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:TEST_1P GND3
-U 1 1 5BA276F7
-P 19600 8550
-F 0 "GND3" V 19600 8850 50  0000 C CNN
-F 1 "TestP" V 19700 8700 50  0001 C CNN
-F 2 "TX2_Footprints:test_point" H 19800 8550 50  0001 C CNN
-F 3 "" H 19800 8550 50  0001 C CNN
-	1    19600 8550
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:TEST_1P GND2
-U 1 1 5BA27674
-P 19600 8300
-F 0 "GND2" V 19600 8600 50  0000 C CNN
-F 1 "TestP" V 19700 8450 50  0001 C CNN
-F 2 "TX2_Footprints:test_point" H 19800 8300 50  0001 C CNN
-F 3 "" H 19800 8300 50  0001 C CNN
-	1    19600 8300
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:TEST_1P GND1
-U 1 1 5BA271AF
-P 19600 8100
-F 0 "GND1" V 19600 8400 50  0000 C CNN
-F 1 "TestP" V 19700 8250 50  0001 C CNN
-F 2 "TX2_Footprints:test_point" H 19800 8100 50  0001 C CNN
-F 3 "" H 19800 8100 50  0001 C CNN
-	1    19600 8100
+P 11750 8500
+F 0 "GND4" V 11750 8800 50  0000 C CNN
+F 1 "TestP" V 11850 8650 50  0001 C CNN
+F 2 "TX2_Footprints:test_point" H 11950 8500 50  0001 C CNN
+F 3 "" H 11950 8500 50  0001 C CNN
+	1    11750 8500
 	0    1    1    0   
 $EndComp
 $Comp
 L TX2_Symbols:Conn_01x01 J26
 U 1 1 5B81DEE2
-P 19750 7750
-F 0 "J26" H 19750 7850 50  0000 C CNN
-F 1 "Conn_01x01" H 19750 7650 50  0000 C CNN
-F 2 "TX2_Footprints:ground_probe" H 19750 7750 50  0001 C CNN
-F 3 "" H 19750 7750 50  0001 C CNN
-	1    19750 7750
+P 11850 8200
+F 0 "J26" H 11850 8300 50  0000 C CNN
+F 1 "Conn_01x01" H 11850 8100 50  0000 C CNN
+F 2 "TX2_Footprints:ground_probe" H 11850 8200 50  0001 C CNN
+F 3 "" H 11850 8200 50  0001 C CNN
+	1    11850 8200
 	1    0    0    -1  
 $EndComp
 Text Label 1250 1800 0    60   ~ 0
@@ -1407,4 +1218,53 @@ Text Label 7050 4500 0    60   ~ 0
 DVDD_CAM_LV
 Text Label 10000 4500 0    60   ~ 0
 DVDD_CAM_LV
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 617A3BD0
+P 14500 7850
+F 0 "J7" H 14580 7892 50  0000 L CNN
+F 1 "Conn_01x01" H 14580 7801 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x1_Pitch2.54mm" H 14500 7850 50  0001 C CNN
+F 3 "~" H 14500 7850 50  0001 C CNN
+	1    14500 7850
+	1    0    0    -1  
+$EndComp
+Text Label 13550 5800 0    60   ~ 0
+DVDD_CAM_LV
+Text Label 13550 5900 0    60   ~ 0
+AVDD_CAM
+Text Label 13600 6050 0    60   ~ 0
+VDD_AF
+Text Label 13550 6200 0    60   ~ 0
+CAM_VSYNC
+Text Label 13550 6350 0    60   ~ 0
+JETSON_1V8
+Text Label 13600 6550 0    60   ~ 0
+VDD_3V3
+Text Label 13650 6700 0    60   ~ 0
+VDD_SYS
+Text Label 14050 6850 2    60   ~ 0
+VDD_CAM_FQ_HV_CAM
+Text Label 13950 7000 2    60   ~ 0
+CAM_AF_PWDN
+Text Label 13950 7150 2    60   ~ 0
+CAM_FLASH_EN
+Text Label 13950 7300 2    60   ~ 0
+JETSON_1V2
+Text Label 13700 7400 0    60   ~ 0
+VDD_IR
+Text Label 13700 7650 0    60   ~ 0
+CAM_INTR
+Text Label 13700 7500 0    60   ~ 0
+IR_READY
+Text Label 13650 7800 0    60   ~ 0
+IR_TRIGGER
+Text Label 13650 7950 0    60   ~ 0
+VSYS_EN
+Wire Wire Line
+	9750 6900 11200 6900
+Wire Wire Line
+	11450 7800 11450 8200
+Wire Wire Line
+	11450 8200 11450 8500
 $EndSCHEMATC
