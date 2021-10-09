@@ -1415,10 +1415,10 @@ JETSON_1V8
 Wire Wire Line
 	11450 8200 11650 8200
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J3
 U 1 1 61BA09C5
 P 11850 7800
-F 0 "J?" H 11930 7842 50  0000 L CNN
+F 0 "J3" H 11930 7842 50  0000 L CNN
 F 1 "GND" H 12050 7800 50  0000 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11850 7800 50  0001 C CNN
 F 3 "~" H 11850 7800 50  0001 C CNN
@@ -1426,10 +1426,10 @@ F 3 "~" H 11850 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J7
 U 1 1 61BA0DC5
 P 11850 8200
-F 0 "J?" H 11930 8242 50  0000 L CNN
+F 0 "J7" H 11930 8242 50  0000 L CNN
 F 1 "GND" H 12000 8200 50  0000 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11850 8200 50  0001 C CNN
 F 3 "~" H 11850 8200 50  0001 C CNN
@@ -1437,10 +1437,10 @@ F 3 "~" H 11850 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J23
 U 1 1 61BA107F
 P 11950 8500
-F 0 "J?" H 12030 8542 50  0000 L CNN
+F 0 "J23" H 12030 8542 50  0000 L CNN
 F 1 "GND" H 12150 8550 50  0000 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11950 8500 50  0001 C CNN
 F 3 "~" H 11950 8500 50  0001 C CNN
@@ -1448,10 +1448,10 @@ F 3 "~" H 11950 8500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J22
 U 1 1 61BA1316
 P 11900 8700
-F 0 "J?" H 11980 8742 50  0000 L CNN
+F 0 "J22" H 11980 8742 50  0000 L CNN
 F 1 "GND" H 12100 8700 50  0000 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11900 8700 50  0001 C CNN
 F 3 "~" H 11900 8700 50  0001 C CNN
