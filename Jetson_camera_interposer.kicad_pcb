@@ -11,11 +11,11 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
-    (1 In1.Cu signal hide)
-    (2 In2.Cu signal hide)
-    (3 In3.Cu signal hide)
-    (4 In4.Cu signal hide)
+    (0 F.Cu signal)
+    (1 In1.Cu signal)
+    (2 In2.Cu signal)
+    (3 In3.Cu signal)
+    (4 In4.Cu signal)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
