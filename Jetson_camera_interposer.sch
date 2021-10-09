@@ -28,7 +28,7 @@ CAM0_MCLK
 Text Label 1650 6500 2    60   ~ 0
 CAM0_PWR
 Text Label 1500 6600 2    60   ~ 0
-CAM0_RST_J
+CAM0_RST
 Text Label 1500 6700 2    60   ~ 0
 CAM_FLASH_EN
 $Comp
@@ -279,7 +279,7 @@ I2C_GP0_CLK_1V8_J
 Text Label 7300 7200 2    60   ~ 0
 I2C_GP0_DAT_1V8_J
 Text Label 10750 6100 0    60   ~ 0
-CAM_VSYNC_J
+CAM_VSYNC
 Text Label 11200 6900 0    60   ~ 0
 JETSON_1V8
 NoConn ~ 9750 4700
@@ -1403,8 +1403,8 @@ Text Label 7450 5750 2    60   ~ 0
 I2C_CAM_DAT_J
 Text Label 7400 5600 2    60   ~ 0
 I2C_CAM_CLK_J
+Text Label 7050 4500 0    60   ~ 0
+DVDD_CAM_LV
 Text Label 10000 4500 0    60   ~ 0
 DVDD_CAM_LV
-Text Label 7050 4500 0    60   ~ 0
-DVDD_CAM_LV_J
 $EndSCHEMATC
