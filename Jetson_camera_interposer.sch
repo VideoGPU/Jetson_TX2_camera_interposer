@@ -119,17 +119,6 @@ Text Label 7050 2400 0    60   ~ 0
 CSI0_D1_P
 Text Label 7050 2500 0    60   ~ 0
 CSI0_D1_N
-$Comp
-L TX2_Symbols:Conn_01x01 J3
-U 1 1 5A60149C
-P 11850 7800
-F 0 "J3" H 11850 7900 50  0000 C CNN
-F 1 "Conn_01x01" H 11850 7700 50  0001 C CNN
-F 2 "TX2_Footprints:ground_probe" H 11850 7800 50  0001 C CNN
-F 3 "" H 11850 7800 50  0001 C CNN
-	1    11850 7800
-	1    0    0    -1  
-$EndComp
 Text Notes 11400 7550 0    60   ~ 0
 Ground pads
 $Comp
@@ -311,8 +300,6 @@ Wire Wire Line
 Wire Wire Line
 	9900 6800 9750 6800
 Connection ~ 11450 8200
-Wire Wire Line
-	11450 8200 11650 8200
 Wire Wire Line
 	11650 7800 11450 7800
 Wire Wire Line
@@ -602,28 +589,6 @@ Wire Wire Line
 	2500 6100 2200 6100
 Wire Wire Line
 	6850 6100 8100 6100
-$Comp
-L TX2_Symbols:TEST_1P I2C_DAT2
-U 1 1 5BA2560B
-P 5700 7200
-F 0 "I2C_DAT2" V 5650 7400 50  0000 C CNN
-F 1 "TestP" V 5700 7550 50  0001 C CNN
-F 2 "TX2_Footprints:test_point" H 5900 7200 50  0001 C CNN
-F 3 "" H 5900 7200 50  0001 C CNN
-	1    5700 7200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L TX2_Symbols:TEST_1P I2C_CLK2
-U 1 1 5BA256F4
-P 6000 7100
-F 0 "I2C_CLK2" V 6050 7050 50  0000 C CNN
-F 1 "TestP" V 6000 7350 50  0001 C CNN
-F 2 "TX2_Footprints:test_point" H 6200 7100 50  0001 C CNN
-F 3 "" H 6200 7100 50  0001 C CNN
-	1    6000 7100
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	11750 8500 11450 8500
 Connection ~ 11450 8500
@@ -739,28 +704,6 @@ Wire Wire Line
 	8000 5900 8100 5900
 Wire Wire Line
 	11450 8500 11450 8700
-$Comp
-L TX2_Symbols:TEST_1P GND4
-U 1 1 5BA2777D
-P 11750 8500
-F 0 "GND4" V 11750 8800 50  0000 C CNN
-F 1 "TestP" V 11850 8650 50  0001 C CNN
-F 2 "TX2_Footprints:test_point" H 11950 8500 50  0001 C CNN
-F 3 "" H 11950 8500 50  0001 C CNN
-	1    11750 8500
-	0    1    1    0   
-$EndComp
-$Comp
-L TX2_Symbols:Conn_01x01 J26
-U 1 1 5B81DEE2
-P 11850 8200
-F 0 "J26" H 11850 8300 50  0000 C CNN
-F 1 "Conn_01x01" H 11850 8100 50  0000 C CNN
-F 2 "TX2_Footprints:ground_probe" H 11850 8200 50  0001 C CNN
-F 3 "" H 11850 8200 50  0001 C CNN
-	1    11850 8200
-	1    0    0    -1  
-$EndComp
 Text Label 1250 1800 0    60   ~ 0
 CSI0_D0_P
 Wire Wire Line
@@ -1218,17 +1161,6 @@ Text Label 7050 4500 0    60   ~ 0
 DVDD_CAM_LV
 Text Label 10000 4500 0    60   ~ 0
 DVDD_CAM_LV
-$Comp
-L Connector_Generic:Conn_01x01 J7
-U 1 1 617A3BD0
-P 11900 8700
-F 0 "J7" H 11980 8742 50  0000 L CNN
-F 1 "Conn_01x01" H 11980 8651 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11900 8700 50  0001 C CNN
-F 3 "~" H 11900 8700 50  0001 C CNN
-	1    11900 8700
-	1    0    0    -1  
-$EndComp
 Text Label 13550 5800 0    60   ~ 0
 DVDD_CAM_LV
 Text Label 13550 5900 0    60   ~ 0
@@ -1480,4 +1412,50 @@ F 3 "~" H 14800 5800 50  0001 C CNN
 $EndComp
 Text Label 13550 6200 0    60   ~ 0
 JETSON_1V8
+Wire Wire Line
+	11450 8200 11650 8200
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 61BA09C5
+P 11850 7800
+F 0 "J?" H 11930 7842 50  0000 L CNN
+F 1 "GND" H 12050 7800 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11850 7800 50  0001 C CNN
+F 3 "~" H 11850 7800 50  0001 C CNN
+	1    11850 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 61BA0DC5
+P 11850 8200
+F 0 "J?" H 11930 8242 50  0000 L CNN
+F 1 "GND" H 12000 8200 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11850 8200 50  0001 C CNN
+F 3 "~" H 11850 8200 50  0001 C CNN
+	1    11850 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 61BA107F
+P 11950 8500
+F 0 "J?" H 12030 8542 50  0000 L CNN
+F 1 "GND" H 12150 8550 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11950 8500 50  0001 C CNN
+F 3 "~" H 11950 8500 50  0001 C CNN
+	1    11950 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 61BA1316
+P 11900 8700
+F 0 "J?" H 11980 8742 50  0000 L CNN
+F 1 "GND" H 12100 8700 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11900 8700 50  0001 C CNN
+F 3 "~" H 11900 8700 50  0001 C CNN
+	1    11900 8700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
