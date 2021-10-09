@@ -268,20 +268,12 @@ NoConn ~ 8100 5200
 NoConn ~ 8100 5300
 NoConn ~ 8100 5400
 NoConn ~ 8100 5500
-Text Label 7400 5600 2    60   ~ 0
-I2C_CAM_CLK_J
-Text Label 7450 5750 2    60   ~ 0
-I2C_CAM_DAT_J
-Text Label 7350 6400 2    60   ~ 0
-CAM0_MCLK_J
-Text Label 7300 6500 2    60   ~ 0
-CAM0_PWR_J
 Text Label 7250 6600 2    60   ~ 0
 CAM0_RST_J
 Text Label 7450 6700 2    60   ~ 0
 CAM_FLASH_EN
 Text Label 7400 6900 2    60   ~ 0
-JETSON_1V2_J
+JETSON_1V2
 Text Label 7500 7100 2    60   ~ 0
 I2C_GP0_CLK_1V8_J
 Text Label 7300 7200 2    60   ~ 0
@@ -289,17 +281,13 @@ I2C_GP0_DAT_1V8_J
 Text Label 10750 6100 0    60   ~ 0
 CAM_VSYNC_J
 Text Label 11200 6900 0    60   ~ 0
-JETSON_1V8_J
+JETSON_1V8
 NoConn ~ 9750 4700
 NoConn ~ 9750 4900
 NoConn ~ 9750 5000
 NoConn ~ 9750 5100
 NoConn ~ 9750 5200
 NoConn ~ 9750 5300
-Text Label 7050 4500 0    60   ~ 0
-DVDD_CAM_LV_J
-Text Label 10000 4500 0    60   ~ 0
-DVDD_CAM_LV_J
 Text Label 4450 4500 0    60   ~ 0
 DVDD_CAM_LV
 Text Label 2150 4500 2    60   ~ 0
@@ -307,25 +295,23 @@ DVDD_CAM_LV
 Text Label 4600 7700 0    60   ~ 0
 VDD_SYS
 Text Label 10200 7700 0    60   ~ 0
-VDD_SYS_J
+VDD_SYS
 Text Label 4450 7200 0    60   ~ 0
 VDD_3V3
 Text Label 10200 7200 0    60   ~ 0
-VDD_3V3_J
+VDD_3V3
 Text Label 10450 5900 0    60   ~ 0
-AVDD_CAM_J
+AVDD_CAM
 Text Label 10450 6000 0    60   ~ 0
-VDD_AF_J
+VDD_AF
 Text Label 4500 5900 0    60   ~ 0
 AVDD_CAM
 Text Label 4500 6000 0    60   ~ 0
 VDD_AF
 Text Label 1300 5900 0    60   ~ 0
 VDD_CAM_FQ_HV_CAM
-Text Label 7750 5900 2    60   ~ 0
-VDD_CAM_FQ_HV_CAM_J
 Text Label 7300 7300 0    60   ~ 0
-VDD_IR_J
+VDD_IR
 Text Label 7200 7400 0    60   ~ 0
 IR_READY
 Text Label 7100 7500 0    60   ~ 0
@@ -1223,10 +1209,6 @@ Wire Wire Line
 	6950 6200 8100 6200
 Wire Wire Line
 	8100 6300 6950 6300
-Text Label 6950 6200 0    60   ~ 0
-CAM_I2C2_SCL_J
-Text Label 6950 6300 0    60   ~ 0
-CAM_I2C2_SDA_J
 Wire Wire Line
 	2500 6200 950  6200
 Wire Wire Line
@@ -1294,42 +1276,6 @@ Text Label 4750 5600 0    60   ~ 0
 I2S3_SDIN
 Text Label 4750 5700 0    60   ~ 0
 I2S3_SDOUT
-Text Label 13850 7900 0    60   ~ 0
-VDD_SYS_J
-Text Label 13850 8000 0    60   ~ 0
-VDD_IR_J
-Text Label 11850 8100 0    60   ~ 0
-VDD_3V3
-Text Label 11850 8200 0    60   ~ 0
-JETSON_1V2
-Text Label 11850 8300 0    60   ~ 0
-JETSON_1V8
-Text Label 11850 8400 0    60   ~ 0
-VDD_AF
-Text Label 11850 8500 0    60   ~ 0
-AVDD_CAM
-Text Label 11850 8600 0    60   ~ 0
-VDD_CAM_FQ_HV_CAM
-Text Label 11850 8700 0    60   ~ 0
-DVDD_CAM_LV
-Text Label 11850 7900 0    60   ~ 0
-VDD_SYS
-Text Label 11850 8000 0    60   ~ 0
-VDD_IR
-Text Label 13850 8100 0    60   ~ 0
-VDD_3V3_J
-Text Label 13850 8200 0    60   ~ 0
-JETSON_1V2_J
-Text Label 13850 8300 0    60   ~ 0
-JETSON_1V8_J
-Text Label 13850 8400 0    60   ~ 0
-VDD_AF_J
-Text Label 13850 8500 0    60   ~ 0
-AVDD_CAM_J
-Text Label 13850 8600 0    60   ~ 0
-VDD_CAM_FQ_HV_CAM_J
-Text Label 13850 8700 0    60   ~ 0
-DVDD_CAM_LV_J
 Wire Wire Line
 	9800 7200 10200 7200
 Wire Wire Line
@@ -1338,24 +1284,8 @@ Text Label 14750 4800 2    60   ~ 0
 I2C_CAM_CLK
 Text Label 14750 4700 2    60   ~ 0
 I2C_CAM_DAT
-Text Label 15650 1500 2    60   ~ 0
-CAM_AF_PWDN
 Text Label 14700 4200 2    60   ~ 0
 CAM0_MCLK
-Text Label 15650 1600 2    60   ~ 0
-CAM_FLASH_EN
-Text Label 15100 1700 0    60   ~ 0
-IR_READY
-Text Label 15050 1800 0    60   ~ 0
-IR_TRIGGER
-Text Label 15050 2750 0    60   ~ 0
-I2S3_CLK
-Text Label 15100 2900 0    60   ~ 0
-I2S3_LRCLK
-Text Label 15100 3000 0    60   ~ 0
-I2S3_SDIN
-Text Label 15100 3100 0    60   ~ 0
-I2S3_SDOUT
 Text Label 14200 4000 0    60   ~ 0
 CAM1_MCLK
 Text Label 14200 3800 0    60   ~ 0
@@ -1459,60 +1389,22 @@ Wire Wire Line
 	13250 4800 13550 4800
 Text Label 4850 6100 2    60   ~ 0
 CAM_VSYNC
-Text Notes 12450 3450 0    60   Italic 12
-VERY BAD LOCATION, FMC DOESN'T FIT. MOVE IT!!!
-Text Label 12850 6900 0    60   ~ 0
-CAM_VSYNC_J
-Text Label 12950 6800 0    60   ~ 0
-VSYS_EN_J
-Text Label 12900 6700 0    60   ~ 0
-CAM_INTR_J
-Text Label 12800 6600 0    60   ~ 0
-CAM2_PWDN_J
-Text Label 12800 6500 0    60   ~ 0
-CAM1_PWDN_J
-Text Label 13300 6400 2    60   ~ 0
+Text Label 7300 6500 2    60   ~ 0
 CAM0_PWR_J
-Text Label 14200 6500 0    60   ~ 0
-CAM1_PWDN
-Text Label 14200 6600 0    60   ~ 0
-CAM2_PWDN
-Text Label 14200 6900 0    60   ~ 0
-CAM_VSYNC
-Text Label 14200 6800 0    60   ~ 0
-VSYS_EN
-Text Label 14200 6700 0    60   ~ 0
-CAM_INTR
-Text Label 14650 6400 2    60   ~ 0
-CAM0_PWR
-Wire Wire Line
-	11850 7900 13850 7900
-Wire Wire Line
-	11850 8000 13850 8000
-Wire Wire Line
-	11850 8100 13850 8100
-Wire Wire Line
-	11850 8200 13850 8200
-Wire Wire Line
-	11850 8300 13850 8300
-Wire Wire Line
-	11850 8400 13850 8400
-Wire Wire Line
-	11850 8500 13850 8500
-Wire Wire Line
-	11850 8600 13850 8600
-Wire Wire Line
-	11850 8700 13850 8700
-Wire Wire Line
-	13300 6400 14650 6400
-Wire Wire Line
-	12800 6500 14200 6500
-Wire Wire Line
-	12800 6600 14200 6600
-Wire Wire Line
-	12900 6700 14200 6700
-Wire Wire Line
-	12950 6800 14200 6800
-Wire Wire Line
-	12850 6900 14200 6900
+Text Label 7350 6400 2    60   ~ 0
+CAM0_MCLK_J
+Text Label 6950 6300 0    60   ~ 0
+CAM_I2C2_SDA_J
+Text Label 6950 6200 0    60   ~ 0
+CAM_I2C2_SCL_J
+Text Label 7750 5900 2    60   ~ 0
+VDD_CAM_FQ_HV_CAM
+Text Label 7450 5750 2    60   ~ 0
+I2C_CAM_DAT_J
+Text Label 7400 5600 2    60   ~ 0
+I2C_CAM_CLK_J
+Text Label 10000 4500 0    60   ~ 0
+DVDD_CAM_LV
+Text Label 7050 4500 0    60   ~ 0
+DVDD_CAM_LV_J
 $EndSCHEMATC
