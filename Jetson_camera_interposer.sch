@@ -738,7 +738,7 @@ Wire Wire Line
 Wire Wire Line
 	8000 5900 8100 5900
 Wire Wire Line
-	11450 8500 11450 8800
+	11450 8500 11450 8700
 $Comp
 L TX2_Symbols:TEST_1P GND4
 U 1 1 5BA2777D
@@ -1221,45 +1221,43 @@ DVDD_CAM_LV
 $Comp
 L Connector_Generic:Conn_01x01 J7
 U 1 1 617A3BD0
-P 14500 7850
-F 0 "J7" H 14580 7892 50  0000 L CNN
-F 1 "Conn_01x01" H 14580 7801 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x1_Pitch2.54mm" H 14500 7850 50  0001 C CNN
-F 3 "~" H 14500 7850 50  0001 C CNN
-	1    14500 7850
+P 11900 8700
+F 0 "J7" H 11980 8742 50  0000 L CNN
+F 1 "Conn_01x01" H 11980 8651 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 11900 8700 50  0001 C CNN
+F 3 "~" H 11900 8700 50  0001 C CNN
+	1    11900 8700
 	1    0    0    -1  
 $EndComp
 Text Label 13550 5800 0    60   ~ 0
 DVDD_CAM_LV
 Text Label 13550 5900 0    60   ~ 0
 AVDD_CAM
-Text Label 13600 6050 0    60   ~ 0
+Text Label 13550 6000 0    60   ~ 0
 VDD_AF
-Text Label 13550 6200 0    60   ~ 0
+Text Label 13550 6100 0    60   ~ 0
 CAM_VSYNC
-Text Label 13550 6350 0    60   ~ 0
-JETSON_1V8
-Text Label 13600 6550 0    60   ~ 0
+Text Label 13550 6300 0    60   ~ 0
 VDD_3V3
-Text Label 13650 6700 0    60   ~ 0
+Text Label 13550 6400 0    60   ~ 0
 VDD_SYS
-Text Label 14050 6850 2    60   ~ 0
+Text Label 14500 6500 2    60   ~ 0
 VDD_CAM_FQ_HV_CAM
-Text Label 13950 7000 2    60   ~ 0
+Text Label 14150 6600 2    60   ~ 0
 CAM_AF_PWDN
-Text Label 13950 7150 2    60   ~ 0
+Text Label 14200 6700 2    60   ~ 0
 CAM_FLASH_EN
-Text Label 13950 7300 2    60   ~ 0
+Text Label 14100 6800 2    60   ~ 0
 JETSON_1V2
-Text Label 13700 7400 0    60   ~ 0
+Text Label 13550 6900 0    60   ~ 0
 VDD_IR
-Text Label 13700 7650 0    60   ~ 0
+Text Label 13550 7100 0    60   ~ 0
 CAM_INTR
-Text Label 13700 7500 0    60   ~ 0
+Text Label 13550 7000 0    60   ~ 0
 IR_READY
-Text Label 13650 7800 0    60   ~ 0
+Text Label 13550 7200 0    60   ~ 0
 IR_TRIGGER
-Text Label 13650 7950 0    60   ~ 0
+Text Label 13550 7300 0    60   ~ 0
 VSYS_EN
 Wire Wire Line
 	9750 6900 11200 6900
@@ -1267,4 +1265,219 @@ Wire Wire Line
 	11450 7800 11450 8200
 Wire Wire Line
 	11450 8200 11450 8500
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 618C1A3B
+P 14800 6000
+F 0 "J6" H 14880 6042 50  0000 L CNN
+F 1 "VDD_AF" H 15050 6050 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 6000 50  0001 C CNN
+F 3 "~" H 14800 6000 50  0001 C CNN
+	1    14800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 618C200C
+P 14800 6100
+F 0 "J9" H 14880 6142 50  0000 L CNN
+F 1 "CAM_VSYNC" H 15050 6150 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 6100 50  0001 C CNN
+F 3 "~" H 14800 6100 50  0001 C CNN
+	1    14800 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 5800 14600 5800
+Wire Wire Line
+	13550 5900 14600 5900
+Wire Wire Line
+	13550 6000 14600 6000
+Wire Wire Line
+	13550 6100 14600 6100
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 6196FB9E
+P 14800 6200
+F 0 "J10" H 14880 6242 50  0000 L CNN
+F 1 "JETSON_1V8" H 15050 6250 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 6200 50  0001 C CNN
+F 3 "~" H 14800 6200 50  0001 C CNN
+	1    14800 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 6197000B
+P 14800 6300
+F 0 "J11" H 14880 6342 50  0000 L CNN
+F 1 "VDD_3V3" H 15050 6350 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 6300 50  0001 C CNN
+F 3 "~" H 14800 6300 50  0001 C CNN
+	1    14800 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 619702D6
+P 14800 6400
+F 0 "J12" H 14880 6442 50  0000 L CNN
+F 1 "VDD_SYS" H 15050 6450 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 6400 50  0001 C CNN
+F 3 "~" H 14800 6400 50  0001 C CNN
+	1    14800 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 619704BB
+P 14800 6500
+F 0 "J13" H 14880 6542 50  0000 L CNN
+F 1 "VDD_CAM_FQ_HV_CAM" H 15050 6550 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 6500 50  0001 C CNN
+F 3 "~" H 14800 6500 50  0001 C CNN
+	1    14800 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J14
+U 1 1 619707A3
+P 14800 6600
+F 0 "J14" H 14880 6642 50  0000 L CNN
+F 1 "CAM_AF_PWDN" H 15050 6650 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 6600 50  0001 C CNN
+F 3 "~" H 14800 6600 50  0001 C CNN
+	1    14800 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J15
+U 1 1 61970AFB
+P 14800 6700
+F 0 "J15" H 14880 6742 50  0000 L CNN
+F 1 "CAM_FLASH_EN" H 15050 6750 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 6700 50  0001 C CNN
+F 3 "~" H 14800 6700 50  0001 C CNN
+	1    14800 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J16
+U 1 1 61970DBF
+P 14800 6800
+F 0 "J16" H 14880 6842 50  0000 L CNN
+F 1 "JETSON_1V2" H 15050 6850 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 6800 50  0001 C CNN
+F 3 "~" H 14800 6800 50  0001 C CNN
+	1    14800 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J17
+U 1 1 6197100B
+P 14800 6900
+F 0 "J17" H 14880 6942 50  0000 L CNN
+F 1 "VDD_IR" H 15050 6950 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 6900 50  0001 C CNN
+F 3 "~" H 14800 6900 50  0001 C CNN
+	1    14800 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J18
+U 1 1 619712C0
+P 14800 7000
+F 0 "J18" H 14880 7042 50  0000 L CNN
+F 1 "IR_READY" H 15050 7050 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 7000 50  0001 C CNN
+F 3 "~" H 14800 7000 50  0001 C CNN
+	1    14800 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J19
+U 1 1 619715ED
+P 14800 7100
+F 0 "J19" H 14880 7142 50  0000 L CNN
+F 1 "CAM_INTR" H 15050 7150 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 7100 50  0001 C CNN
+F 3 "~" H 14800 7100 50  0001 C CNN
+	1    14800 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J20
+U 1 1 6197188D
+P 14800 7200
+F 0 "J20" H 14880 7242 50  0000 L CNN
+F 1 "IR_TRIGGER" H 15050 7250 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 7200 50  0001 C CNN
+F 3 "~" H 14800 7200 50  0001 C CNN
+	1    14800 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J21
+U 1 1 61971B0F
+P 14800 7300
+F 0 "J21" H 14880 7342 50  0000 L CNN
+F 1 "VSYS_EN" H 15050 7350 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 7300 50  0001 C CNN
+F 3 "~" H 14800 7300 50  0001 C CNN
+	1    14800 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 6200 14600 6200
+Wire Wire Line
+	13550 6300 14600 6300
+Wire Wire Line
+	13550 6400 14600 6400
+Wire Wire Line
+	14500 6500 14600 6500
+Wire Wire Line
+	14150 6600 14600 6600
+Wire Wire Line
+	14200 6700 14600 6700
+Wire Wire Line
+	14100 6800 14600 6800
+Wire Wire Line
+	13550 6900 14600 6900
+Wire Wire Line
+	13550 7000 14600 7000
+Wire Wire Line
+	13550 7100 14600 7100
+Wire Wire Line
+	13550 7200 14600 7200
+Wire Wire Line
+	13550 7300 14600 7300
+Wire Wire Line
+	11700 8700 11450 8700
+Connection ~ 11450 8700
+Wire Wire Line
+	11450 8700 11450 8800
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 618C15A3
+P 14800 5900
+F 0 "J5" H 14880 5942 50  0000 L CNN
+F 1 "AVDD_CAM" H 15050 5950 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 5900 50  0001 C CNN
+F 3 "~" H 14800 5900 50  0001 C CNN
+	1    14800 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 618C0F2F
+P 14800 5800
+F 0 "J4" H 14880 5842 50  0000 L CNN
+F 1 "DVDD_CAM_LV" H 15050 5850 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 14800 5800 50  0001 C CNN
+F 3 "~" H 14800 5800 50  0001 C CNN
+	1    14800 5800
+	1    0    0    -1  
+$EndComp
+Text Label 13550 6200 0    60   ~ 0
+JETSON_1V8
 $EndSCHEMATC
